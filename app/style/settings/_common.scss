@@ -22,24 +22,24 @@ svg {
 }
 
 .container {
-	width: 1220px;
+	max-width: 1220px;
 	margin: 0 auto;
 	padding: 0 25px;
-	@include r(1219) {
-		width: 1024px;
+	@include r(1239) {
+		max-width: 1024px;
 	}
 	@include r(1023) {
-		width: 768px;
+		max-width: 768px;
 		padding: 0 10px;
 	}
 	@include r(767) {
-		width: 640px;
+		max-width: 640px;
 	}
 	@include r(639) {
-		width: 480px;
+		max-width: 480px;
 	}
 	@include r(479) {
-		width: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -47,7 +47,7 @@ svg {
 	font-size: 54px;
 	line-height: 1;
 	color: #16171a;
-	@include r(1219) {
+	@include r(1239) {
 		font-size: 42px;
 	}
 	@include r(1023) {	
@@ -83,7 +83,7 @@ svg {
 
 /* copy for other sections
 
-@include r(1219) {
+@include r(1239) {
 		
 }
 @include r(1023) {

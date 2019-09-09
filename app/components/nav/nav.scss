@@ -1,0 +1,44 @@
+.nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+.nav__item {
+  margin-right: 68px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.nav__link {
+  color: $common-gray;
+  font-size: 18px;
+  line-height: 1;
+  transition: color $transition-duration;
+
+  &:hover,
+  &:focus {
+    color: $common-orange;
+  }
+}
+
+@include r(1239) {
+  .nav {
+    justify-content: center;
+  }
+
+  .nav__item {
+    margin-right: 30px;
+  }
+
+  .nav__link {
+    font-size: 16px;
+  }
+}

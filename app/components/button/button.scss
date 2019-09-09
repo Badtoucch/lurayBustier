@@ -1,0 +1,32 @@
+.button {
+  display: block;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 306px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 59px;
+  background-image: linear-gradient(
+    to bottom,
+    #f9af30,
+    #f8611f
+  );
+  border-radius: 30px / 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition-property: box-shadow, transform;
+  transition-duration: $transition-duration;
+
+  &:hover,
+  &:focus {
+    box-shadow: 3px 4px 29px 0px rgba(228, 158, 102, 0.75);
+  }
+
+  &:active {
+    transform: translateY(4px);
+  }
+}

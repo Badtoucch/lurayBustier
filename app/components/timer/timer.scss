@@ -1,0 +1,62 @@
+.timer {
+  position: relative;
+  display: flex;
+  padding: 24px 0 25px 27px;
+  color: $common-gray;
+  background: white;
+  border: 3px solid #fb9925;
+  border-radius: 4px;
+  box-shadow: $shadow;
+}
+
+.timer__description {
+  max-width: 90px;
+  margin-top: 2px;
+  margin-right: 21px;
+  font-size: 20px;
+  line-height: (25 / 20);
+}
+
+.timer__counter {
+  display: flex;
+  align-items: center;
+}
+
+.timer__cell {
+  text-align: center;
+}
+
+.timer__cell + * {
+  margin-left: 10px;
+}
+
+$color: #f86820;
+$fz: 39px;
+
+.timer__divider {
+  position: relative;
+  top: 0;
+  align-self: flex-start;
+  margin-right: 1px;
+  color: $color;
+  font-size: $fz;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.timer__divider + * {
+  margin-left: 10px;
+}
+
+.timer__value {
+  color: $color;
+  font-size: $fz;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.timer__discount {
+  position: absolute !important;
+  top: 14px;
+  right: 40px;
+}
