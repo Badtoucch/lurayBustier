@@ -1,10 +1,11 @@
 .intro {
+  background-color: #f7f8fa;
   border-bottom: 1px solid #ebebeb;
 }
 
 .intro__top {
   padding: 96px 0 94px;
-  background-color: #f7f8fa;
+  overflow: hidden;
 }
 
 .intro__content {
@@ -39,11 +40,15 @@
 .intro__product {
   position: absolute;
   top: 8px;
-  right: -66px;
+  right: -42px;
+
+  &--adaptive {
+    display: none;
+  }
 }
 
 .intro__timer {
-  max-width: 410px;
+  max-width: 445px;
   margin-bottom: 28px;
 }
 
@@ -58,6 +63,7 @@
 
 .intro__bottom {
   padding: 45px 0 37px;
+  background: white;
 }
 
 .intro__features {
@@ -87,6 +93,7 @@
 
 .intro__feature-icon {
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 51px;
@@ -94,4 +101,245 @@
   margin-right: 22px;
   background-color: #f7f8fa;
   border-radius: 50%;
+}
+
+@include r(1239) {
+  .intro__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .intro__top {
+    padding: 50px 0;
+  }
+
+  .intro__text {
+    max-width: 480px;
+  }
+
+  .intro__title {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .intro__title-small {
+    margin-top: 5px;
+    font-size: 30px;
+  }
+
+  .intro__subtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .intro__timer {
+    max-width: 435px;
+    margin-bottom: 30px;
+  }
+
+  .intro__price {
+    margin-bottom: 30px;
+  }
+
+  .intro__product {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-left: 20px;
+  }
+
+  .intro__features {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .intro__feature {
+    line-height: (20 / 17);
+
+    &--light {
+      margin-right: 0;
+    }
+
+    &--human {
+      margin-right: 0;
+    }
+
+    & b {
+      display: block;
+    }
+  }
+
+  .intro__bottom {
+    padding: 40px 0;
+  }
+}
+
+@include r(1023) {
+  .intro {
+    padding-bottom: 0 !important;
+  }
+  
+  .intro__top {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+
+  .intro__text {
+    max-width: 400px;
+  }
+
+  .intro__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+
+  .intro__title-small {
+    font-size: 24px;
+  }
+
+  .intro__subtitle {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+
+  .intro__timer {
+    max-width: 390px;
+    margin-bottom: 20px;
+  }
+
+  .intro__price {
+    max-width: 390px;
+    margin-bottom: 20px;
+  }
+}
+
+@include r(767) {
+  .intro__top {
+    padding-bottom: 30px;
+  }
+
+  .intro__text {
+    margin: 0 auto;
+  }
+
+  .intro__title,
+  .intro__subtitle {
+    text-align: center;
+  }
+
+  .intro__timer {
+    margin: 0 auto 20px;
+  }
+
+  .intro__price {
+    margin: 0 auto 20px;
+  }
+
+  .intro__product {
+    display: none;
+
+    &--adaptive {
+      display: block;
+      margin: 0 auto 20px;
+    }
+  }
+
+  .intro__button {
+    margin: 0 auto;
+  }
+
+  .intro__bottom {
+    padding: 30px 0;
+  }
+
+  .intro__feature {
+    font-size: 16px;
+  }
+
+  .intro__feature-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+  }
+}
+
+@include r(639) {
+  .intro__content--bottom {
+    display: block;
+  }
+
+  .intro__product {
+    max-width: 400px;
+  }
+
+  .intro__features {
+    display: block;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .intro__feature {
+    margin-bottom: 10px;
+
+    & b {
+      display: inline;
+    }
+  }
+
+  .intro__feature:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@include r(479) {
+  .intro__top {
+    padding-bottom: 25px;
+  }
+
+  .intro__text {
+    max-width: 100%;
+  }
+
+  .intro__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .intro__title-small {
+    font-size: 18px;
+  }
+
+  .intro__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .intro__timer {
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .intro__price {
+    max-width: 180px;
+    margin-bottom: 20px;
+  }
+
+  .intro__product {
+    margin-bottom: 20px;
+  }
+
+  .intro__product-img {
+    display: block;
+    width: 100%;
+  }
+
+  .intro__bottom {
+    padding: 25px 0;
+  }
+
+  .intro__feature {
+    &--light {
+      max-width: 230px;
+    }
+  }
 }

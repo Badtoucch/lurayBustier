@@ -65,3 +65,49 @@
   font-size: 18px;
   line-height: 1;
 }
+
+.price--modal .price__cell {
+  display: block;
+}
+
+.price--modal .price__label {
+  max-width: 100%;
+}
+
+@include r(1023) {
+  .price__cell {
+    align-items: flex-end;
+  }
+
+  .price__label {
+    max-width: 60px;
+    font-size: 15px;
+  }
+
+  .price__value {
+    margin-right: 5px;
+    font-size: 38px;
+  }
+
+  .price__currency {
+    font-size: 16px;
+  }
+}
+
+@include r(479) {
+  .price {
+    display: block;
+  }
+
+  .price__cell {
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}

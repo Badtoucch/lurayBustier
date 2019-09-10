@@ -1,12 +1,23 @@
 .timer {
   position: relative;
   display: flex;
-  padding: 24px 0 25px 27px;
+  margin-right: 34px;
+  padding: 24px 65px 25px 27px;
   color: $common-gray;
   background: white;
   border: 3px solid #fb9925;
   border-radius: 4px;
   box-shadow: $shadow;
+
+  &--modal {
+    position: relative;
+    padding: 11px 4px 20px;
+    padding-left: 0;
+    background: none;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid #e2e2e2;
+  }
 }
 
 .timer__description {
@@ -59,4 +70,57 @@ $fz: 39px;
   position: absolute !important;
   top: 14px;
   right: 40px;
+}
+
+.timer--modal .timer__discount {
+  right: -40px;
+}
+
+@include r(1239) {
+  .timer {
+    align-items: center;
+  }
+
+  .timer__description {
+    max-width: 83px;
+    margin-top: 0;
+    margin-right: 10px;
+    font-size: 16px;
+    line-height: (20 / 18);
+  }
+
+  .timer__value {
+    font-size: 32px;
+  }
+}
+
+@include r(1023) {
+  .timer {
+    padding: 15px 55px 15px 15px;
+  }
+
+  .timer__discount {
+    top: 10px;
+  }
+}
+
+@include r(479) {
+  .timer {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    padding: 15px;
+    padding-right: 95px;
+  }
+
+  .timer__description {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .timer__discount {
+    right: 82px;
+  }
 }

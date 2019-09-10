@@ -6,7 +6,10 @@ body {
 	overflow-x: hidden;
 	color: #444;
 	background-color: #fff;
+}
 
+.page {
+	background-color: #fff;
 }
 
 img {
@@ -22,6 +25,7 @@ svg {
 }
 
 .container {
+	width: 100%;
 	max-width: 1220px;
 	margin: 0 auto;
 	padding: 0 25px;
@@ -78,6 +82,10 @@ svg {
 }
 .nowrap {
 	white-space: nowrap;
+}
+
+.accent-orange {
+	color: $common-orange;
 }
 
 

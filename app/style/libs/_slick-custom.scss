@@ -1,0 +1,48 @@
+.modal__slider {
+  & .slick-list {
+    max-width: 492px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+  }
+
+  & .slick-dots {
+    z-index: 100;
+    top: 0;
+    left: 0;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: 577px;
+  }
+
+  & .slick-dots li {
+    width: auto;
+    height: auto;
+  }
+
+  & .slick-dots li button {
+    width: 121px;
+    height: 128px;
+    margin: 0;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    transition: border-color $transition-duration;
+    cursor: pointer;
+  }
+
+  & .slick-dots li img {
+    max-height: 100%;
+    opacity: 0.5;
+  }
+
+  & .slick-dots li.slick-active button {
+    border-color: $common-orange;
+  }
+  
+  & .slick-dots li.slick-active img {
+    opacity: 1;
+  }
+}
