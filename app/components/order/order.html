@@ -5,16 +5,22 @@
 <div class="order__price price price--modal">
   <!--=include ../price/price.html -->
 </div>
-<div class="order__row order__row--select">
+<div class="order__row order__row--select x_country_select">
   <img src="img/icon-country.svg" alt="" class="order__field-icon order__field-icon--country">
-  <input type="text" class="order__field">
+  <select class="country-select order__select" name="country_code">
+    <option>Apple</option>
+    <option>Plum</option>
+    <option>Orange</option>
+  </select>
 </div>
 <div class="order__row order__row--input">
   <img src="img/icon-name.svg" alt="" class="order__field-icon order__field-icon--name">
-  <input type="text" class="order__field" placeholder="Ваше имя">
+  <input type="text" class="order__field" name="name" placeholder="Ваше имя">
+  <span class="order__field-decoration"></span>
 </div>
 <div class="order__row order__row--input">
   <img src="img/icon-phone.svg" alt="" class="order__field-icon order__field-icon--phone">
-  <input type="text" class="order__field" placeholder="Ваш телефон">
+  <input type="text" class="order__field" name="phone" placeholder="Ваш телефон">
+  <span class="order__field-decoration"></span>
 </div>
 <button type="submit" class="order__button button">Заказать DUO C&P</button>
