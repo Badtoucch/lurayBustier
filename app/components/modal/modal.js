@@ -13,6 +13,9 @@ $(function () {
 
   $slider.slick(sliderSettings);
   $('.ever-popup .modal__slider-item img').each(function (index) {
-    $('.ever-popup .slick-dots li').eq(index).find('button').append('<img src="' + this.src + '" alt="" >');
+    $('.ever-popup .slick-dots li')
+        .eq(index)
+        .find('button')
+        .append('<img src="' + this.src + '" alt="" >');
   });
 });
