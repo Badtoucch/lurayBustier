@@ -6,6 +6,7 @@
   margin-bottom: 18px;
   font-size: 36px;
   line-height: 1;
+  white-space: nowrap;
 
   & b {
     font-weight: 700;
@@ -102,4 +103,57 @@
   width: 0;
   border-bottom: 1px solid $common-orange;
   transition: width $transition-duration;
+}
+
+
+@include r(1239) {
+  .order {
+    padding-top: 0;
+  }
+
+  .order__title {
+    font-size: 32px;
+  }
+
+  .order__timer {
+    max-width: 270px;
+    margin-bottom: 30px;
+  }
+
+  .order__price {
+    margin-bottom: 30px;
+  }
+
+  .order__row:last-of-type {
+    margin-bottom: 30px;
+  }
+}
+
+@include r(1023) {
+  .order__title {
+    max-width: 100%;
+    margin-bottom: 0;
+    font-size: 30px;
+    white-space: normal;
+  }
+
+  .order__timer {
+    max-width: 300px;
+  }
+}
+
+@include r(767) {
+  .order__title {
+    margin-bottom: 5px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .order__timer {
+    margin-bottom: 20px;
+  }
+
+  .order__price {
+    margin-bottom: 20px;
+  }
 }

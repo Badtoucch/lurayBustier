@@ -17,8 +17,8 @@
 
 .ever-popup__close {
   z-index: 100 !important;
-  top: 20 !important;
-  right: 20 !important;
+  top: 10px !important;
+  right: 10px !important;
   width: 35px !important;
   height: 35px !important;
 
@@ -54,6 +54,7 @@
 }
 
 .modal__slider {
+  max-width: 641px;
   margin-left: -4px;
   padding-left: 149px;
 }
@@ -61,7 +62,7 @@
 .modal__slider-item {
   display: flex !important;
   align-items: center;
-  min-height: 577px;
+  height: 577px;
 
   & img {
     max-width: 100%;
@@ -71,4 +72,70 @@
 
 .modal__order {
   margin-left: 43px;
+}
+
+@include r(1239) {
+  .modal__content {
+    padding: 50px 0;
+  }
+
+  .modal__slider {
+    max-width: 485px;
+    margin: 0;
+    padding-left: 125px;
+  }
+
+  .modal__slider-item {
+    height: 470px;
+    margin: 0;
+
+    & img {
+      max-height: 300px;
+    }
+  }
+
+  .modal__order {
+    margin-left: 25px;
+  }
+}
+
+
+@include r(1023) {
+  .modal__content {
+    align-items: center;
+  }
+
+  .modal__slider {
+    max-width: 320px;
+    height: auto;
+    padding-left: 0;
+    padding-bottom: 40px;
+  }
+
+  .modal__slider-item {
+    height: 340px;
+  }
+}
+
+
+@include r(767) {
+  .ever-popup__close {
+    top: 20px !important;
+  }
+
+  .modal__slider {
+    max-width: 210px;
+  }
+}
+
+@include r(639) {
+  .modal__slider {
+    position: relative;
+    display: none;
+  }
+
+  .modal__order {
+    max-width: 300px;
+    margin: 0 auto;
+  }
 }
