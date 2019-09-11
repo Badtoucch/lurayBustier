@@ -4,3 +4,4 @@
 //=include ../components/header/header.js
 //=include ../components/footer/footer.js
 //=include ../components/modal/modal.js
+//=include ../components/help/help.js
