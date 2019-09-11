@@ -1,93 +1,118 @@
 $accentColor: #009fdb;
 
-body {	
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	overflow-x: hidden;
-	color: #444;
-	background-color: #fff;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+  color: #444;
+  background-color: #fff;
 }
 
 .page {
-	background-color: #fff;
+  background-color: #fff;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 svg {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 ::-ms-clear {
-	display: none;
+  display: none;
 }
 
 .container {
-	width: 100%;
-	max-width: 1220px;
-	margin: 0 auto;
-	padding: 0 25px;
-	@include r(1239) {
-		max-width: 1024px;
-	}
-	@include r(1023) {
-		max-width: 768px;
-		padding: 0 10px;
-	}
-	@include r(767) {
-		max-width: 640px;
-	}
-	@include r(639) {
-		max-width: 480px;
-	}
-	@include r(479) {
-		max-width: 100%;
-	}
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 25px;
+  @include r(1239) {
+    max-width: 1024px;
+  }
+  @include r(1023) {
+    max-width: 768px;
+    padding: 0 10px;
+  }
+  @include r(767) {
+    max-width: 640px;
+  }
+  @include r(639) {
+    max-width: 480px;
+  }
+  @include r(479) {
+    max-width: 100%;
+  }
 }
 
-.title {	
-	font-size: 54px;
-	line-height: 1;
-	color: #16171a;
-	@include r(1239) {
-		font-size: 42px;
-	}
-	@include r(1023) {	
-		font-size: 36px;
-		line-height: 1.1;
-	}
-	@include r(767) {	
-		font-size: 32px;
-	}
-	@include r(639) {	
-		font-size: 29px;
-	}
-	@include r(479) {	
-		font-size: 26px;
-	}
+.title {
+  font-size: 48px;
+  font-weight: 900;
+  line-height: 1;
+  color: #121212;
+  text-align: center;
+  @include r(1239) {
+    font-size: 42px;
+  }
+  @include r(1023) {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+  @include r(767) {
+    font-size: 32px;
+  }
+  @include r(639) {
+    font-size: 29px;
+  }
+  @include r(479) {
+    font-size: 26px;
+  }
 }
 
 .text-bold {
-	font-weight: 700;
-	color: #16171a;
+  font-weight: 700;
+  color: #16171a;
 }
 
 .text-black {
-	font-weight: 900;
+  font-weight: 900;
 }
 .accent-color {
-	color: $accentColor;
+  color: $accentColor;
 }
 .nowrap {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 .accent-orange {
-	color: $common-orange;
+  color: $common-orange;
 }
 
+.title-icon {
+  padding-top: 90px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(../img/title-img.png) no-repeat center;
+    width: 83px;
+    height: 65px;
+    @include r(1023) {
+      display: none;
+    }
+  }
+  @include r(1239) {
+    padding-top: 80px;
+  }
+  @include r(1023) {
+    padding-top: 0;
+  }
+}
 
 /* copy for other sections
 
