@@ -97,10 +97,18 @@ $fz: 39px;
 @include r(1023) {
   .timer {
     padding: 15px 55px 15px 15px;
+
+    &--modal {
+      padding: 16px 0 15px;
+    }
   }
 
   .timer__discount {
     top: 10px;
+  }
+
+  .timer--modal .timer__discount {
+    right: -5px;
   }
 }
 
@@ -111,6 +119,12 @@ $fz: 39px;
     margin-right: 0;
     padding: 15px;
     padding-right: 95px;
+
+    &--modal {
+      padding: 15px;
+      padding-right: 90px;
+      border: none;
+    }
   }
 
   .timer__description {
@@ -122,5 +136,9 @@ $fz: 39px;
 
   .timer__discount {
     right: 82px;
+  }
+
+  .timer--modal .timer__discount {
+    right: 75px;
   }
 }

@@ -68,6 +68,7 @@
     font-weight: 700;
     line-height: 40px;
     text-align: center;
+    background-clip: content-box;
     background-color: $common-orange;
     border: 9px solid white;
     border-radius: 50%;
@@ -96,6 +97,12 @@
   .header__logo {
     margin: 0;
   }
+
+  .header__order {
+    top: auto;
+    right: auto;
+    margin: 0 auto;
+  }
 }
 
 @include r(1023) {
@@ -114,6 +121,16 @@
   .header__button {
     line-height: 48px;
     border-radius: 25px / 50%;
+  }
+}
+
+@include r(767) {
+  .header__order {
+    display: none;
+  }
+
+  .header--modal .header__logo {
+    margin: 0 auto;
   }
 }
 

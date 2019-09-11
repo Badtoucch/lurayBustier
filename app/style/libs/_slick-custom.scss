@@ -41,8 +41,59 @@
   & .slick-dots li.slick-active button {
     border-color: $common-orange;
   }
-  
+
   & .slick-dots li.slick-active img {
     opacity: 1;
+  }
+}
+
+@include r(1239) {
+  .modal__slider {
+
+    & .slick-dots {
+      height: 470px;
+    }
+
+    & .slick-dots li button {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+@include r(1023) {
+  .modal__slider {
+
+    & .slick-dots {
+      top: auto;
+      bottom: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: auto;
+    }
+
+    & .slick-dots li button {
+      width: 25px;
+      height: 25px;
+      margin: 0 10px;
+      border-radius: 50%;
+      transition-property: background-color, border-color;
+      transition-duration: $transition-duration;
+      // border-color: $common-gray;
+    }
+
+    & .slick-dots li.slick-active button {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      background-color: $common-orange;
+    }
+
+    & .slick-dots li img {
+      display: none;
+    }
   }
 }
