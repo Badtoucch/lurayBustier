@@ -24,10 +24,24 @@
 
   &:hover,
   &:focus {
-    box-shadow: 3px 4px 29px 0px rgba(228, 158, 102, 0.75);
+    box-shadow: 3px 4px 29px 0px transparentize(#e49e66, 0.25);
   }
 
   &:active {
     transform: translateY(4px);
+  }
+}
+
+.button--silver {
+  color: #212121;
+  background-image: linear-gradient(
+    to bottom,
+    white,
+    #d5d5d5
+  );
+
+  &:hover,
+  &:focus {
+    box-shadow: 3px 4px 10px 0px transparentize(#a8a6a6, 0.25);
   }
 }
