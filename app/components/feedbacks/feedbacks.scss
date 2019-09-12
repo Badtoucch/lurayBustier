@@ -115,6 +115,12 @@
   .feedbacks__list-body {
     max-width: 480px;
   }
+
+  .feedbacks__list-total--gray {
+    justify-content: flex-end;
+    margin-left: 0;
+    padding-right: 30px;
+  }
 }
 
 @include r(479) {
@@ -124,5 +130,13 @@
 
   .feedbacks__list-body {
     max-width: 300px;
+  }
+
+  .feedbacks__list-total--orange {
+    max-width: 100%;
+  }
+  
+  .feedbacks__list-total--gray {
+    display: none;
   }
 }

@@ -12,4 +12,11 @@ $(function () {
   $(window).resize(function () {
     setBodyPadding();
   });
+
+  $(document).on('click', '.nav__link[href^="#"]', function (evt) {
+    evt.preventDefault();
+    $('html, body').animate({
+      scrollTop: $($.attr(this, 'href')).offset().top - $('.header').outerHeight() - 40
+    }, 500);
+  });
 })

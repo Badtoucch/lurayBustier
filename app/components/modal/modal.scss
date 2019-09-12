@@ -1,18 +1,5 @@
-.ever-popup {
-  display: block !important;
-  z-index: -1 !important;
-  background: #f7f8fa !important;
-}
-
-.ever-popup.show {
-  z-index: 1000 !important;
-}
-
 .ever-popup__inner {
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  height: 100%;
+  padding-top: 0 !important;
 }
 
 .ever-popup__close {
@@ -29,7 +16,7 @@
     right: auto !important;
     width: 35px !important;
     height: 5px !important;
-    background-color: $common-gray !important;
+    background-color: $common-orange !important;
     transform: translate(-50%, -50%) !important;
     transition: background-color $transition-duration !important;
   }
@@ -44,56 +31,34 @@
 
   &:hover::before,
   &:hover::after {
-    background-color: $common-orange !important;
+    background-color: $common-gray !important;
   }
+}
+
+.modal {
+  padding: 20px;
+  background-color: #f7f8fa;
+  border-radius: 10px;
+}
+
+.modal__container {
+  padding: 0 !important;
 }
 
 .modal__content {
   display: flex;
-  padding: 104px 0;
 }
 
-.modal__slider {
-  max-width: 641px;
-  margin-left: -4px;
-  padding-left: 149px;
-}
-
-.modal__slider-item {
-  display: flex !important;
-  align-items: center;
-  height: 577px;
-
-  & img {
-    max-width: 100%;
-    margin: 0 auto;
-  }
+.modal__picture {
+  max-width: 300px;
+  align-self: center;
 }
 
 .modal__order {
-  margin-left: 43px;
+  margin-left: 25px;
 }
 
 @include r(1239) {
-  .modal__content {
-    padding: 50px 0;
-  }
-
-  .modal__slider {
-    max-width: 485px;
-    margin: 0;
-    padding-left: 125px;
-  }
-
-  .modal__slider-item {
-    height: 470px;
-    margin: 0;
-
-    & img {
-      max-height: 300px;
-    }
-  }
-
   .modal__order {
     margin-left: 25px;
   }
@@ -104,33 +69,10 @@
   .modal__content {
     align-items: center;
   }
-
-  .modal__slider {
-    max-width: 320px;
-    height: auto;
-    padding-left: 0;
-    padding-bottom: 40px;
-  }
-
-  .modal__slider-item {
-    height: 340px;
-  }
 }
-
 
 @include r(767) {
-  .ever-popup__close {
-    top: 20px !important;
-  }
-
-  .modal__slider {
-    max-width: 210px;
-  }
-}
-
-@include r(639) {
-  .modal__slider {
-    position: relative;
+  .modal__picture {
     display: none;
   }
 

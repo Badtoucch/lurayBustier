@@ -2,30 +2,42 @@ $(function () {
   $('.review-button').click(function () {
     var $this = $(this);
     var $counter = $this.parents('.review').find('.like-counter');
-    var counterValue = parseInt($counter.text(), 10);
 
-    var upCounterValue = function () {
-      return ++counterValue;
+    var isLike = $this.hasClass('review-button--like');
+    var isUnlike = $this.hasClass('review-button--unlike');
+    var isPrevLikeActive = isUnlike && $this.prev().hasClass('active');
+    var isActive = $this.hasClass('active');
+
+    var getValue = function () {
+      return parseInt($counter.text(), 10);
     };
 
-    var downCounterValue = function () {
-      return --counterValue;
+    var upValue = function () {
+      $counter.text(getValue() + 1);
     };
 
-    if ($this.hasClass('review-button--like')) {
+    var downValue = function () {
+      $counter.text(getValue() - 1);
+    };
+
+    if (isLike) {
       $this.next().removeClass('active');
     }
 
-    if ($this.hasClass('review-button--like') && $this.hasClass('active')) {
-      $counter.text(downCounterValue());
+    if (isLike && !isActive) {
+      upValue();
+    }
+    
+    if (isLike && isActive) {
+      downValue();
     }
 
-    if ($this.hasClass('review-button--like') && !$this.hasClass('active')) {
-      $counter.text(upCounterValue());
-    }
-
-    if ($this.hasClass('review-button--unlike')) {
+    if (isUnlike) {
       $this.prev().removeClass('active');
+    }
+
+    if (isUnlike && isPrevLikeActive) {
+      downValue();
     }
 
     $this.toggleClass('active');

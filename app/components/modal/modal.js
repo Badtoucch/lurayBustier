@@ -16,8 +16,8 @@ $(function () {
   };
 
   var fillCarouselNavigation = function () {
-    $('.ever-popup .modal__slider-item img').each(function (index) {
-      $('.ever-popup .slick-dots li')
+    $('.modal__slider-item img').each(function (index) {
+      $('.modal__slider .slick-dots li')
           .eq(index)
           .find('button')
           .append('<img src="' + this.src + '" alt="" >');

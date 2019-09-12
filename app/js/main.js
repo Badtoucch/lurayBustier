@@ -1,5 +1,6 @@
 "use strict";
 
+//=include ../components/helpers/helpers.js
 //=include ../components/button/button.js
 //=include ../components/header/header.js
 //=include ../components/feedbacks/feedbacks.js

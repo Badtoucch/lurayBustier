@@ -64,7 +64,10 @@
 }
 
 .review__like-description {
-  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  max-width: 300px;
   color: #212122;
   font-size: 14px;
   line-height: 1;
@@ -77,23 +80,7 @@
   margin-left: -2px;
 }
 
-@include r(639) {
-  .feedbacks__list-total--gray {
-    justify-content: flex-end;
-    margin-left: 0;
-    padding-right: 30px;
-  }
-}
-
 @include r(479) {
-  .feedbacks__list-total--orange {
-    max-width: 100%;
-  }
-  
-  .feedbacks__list-total--gray {
-    display: none;
-  }
-
   .review__top {
     padding-left: 60px;
   }
