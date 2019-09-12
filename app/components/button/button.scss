@@ -11,11 +11,7 @@
   font-weight: 700;
   text-align: center;
   line-height: 59px;
-  background-image: linear-gradient(
-    to bottom,
-    #f9af30,
-    #f8611f
-  );
+  background-image: linear-gradient(to bottom, #f9af30, #f8611f);
   border-radius: 30px / 50%;
   overflow: hidden;
   cursor: pointer;
@@ -45,3 +41,4 @@
     box-shadow: 3px 4px 10px 0px transparentize(#a8a6a6, 0.25);
   }
 }
+
