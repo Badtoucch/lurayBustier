@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 //=include ../components/button/button.js
 //=include ../components/header/header.js
@@ -6,3 +6,5 @@
 //=include ../components/review/review.js
 //=include ../components/footer/footer.js
 //=include ../components/modal/modal.js
+//=include ../components/help/help.js
+

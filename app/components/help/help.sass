@@ -1,0 +1,231 @@
+.help
+	position: relative
+	padding: 130px 0 90px
+	border-bottom: 1px solid #ebebeb
+	z-index: 0
+	+r(1239)
+		padding: 60px 0
+	&:before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 0
+		background: url(../img/help-women.png) no-repeat center
+		background-size: contain
+		width: 800px
+		height: 533px
+		z-index: -1
+		+r(1239)
+			height: 467px
+			width: 700px
+		+r(1023)
+			opacity: .1
+		+r(767)
+			display: none
+	.container
+		display: flex	
+	&__tooltip
+		padding-left: 30px
+		margin-right: 170px
+		color: #444444
+		font-size: 18px
+		font-weight: 400
+		line-height: 25px
+		position: relative
+		z-index: 0
+		+r(1239)
+			flex-shrink: 0
+			margin-right: 120px
+			line-height: 22px
+		+r(1023)
+			display: none
+		b
+			color: #1b1a1a
+			font-weight: 500
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: -39px
+			background: url(../img/icon-hand.svg)
+			width: 75px
+			height: 64px
+			z-index: -1
+	&__content
+		max-width: 772px
+		background-color: rgba(255,255,255,0.8)
+		box-shadow: -4px 5px 22px 6px rgba(255,255,255,1);
+		+r(1023)
+			max-width: 100%
+			background: none
+			box-shadow: none
+	&__title
+		position: relative
+		padding-left: 44px
+		color: #1f1e1e
+		font-family: Roboto
+		font-size: 27px
+		font-weight: 500
+		line-height: 30px
+		+r(1239)
+			font-size: 26px
+			line-height: normal
+			padding-left: 38px
+		+r(1023)
+			text-align: center
+			padding-left: 0
+			font-size: 24px
+		+r(639)
+			font-size: 23px
+		+r(479)
+			br
+				display: none
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 3px
+			height: 117%
+			background-color: #fb9925
+			+r(1023)
+				display: none
+	&__subtitle
+		margin: 22px 0 40px
+		padding-left: 44px
+		color: #6f6f6f
+		font-size: 19px
+		font-weight: 400
+		line-height: 28px
+		+r(1239)
+			font-size: 18px
+			padding-left: 38px
+			line-height: 27px
+			margin: 18px 0 30px
+		+r(1023)
+			font-size: 17px
+			line-height: normal
+			margin: 15px 0
+			text-align: center
+			padding-left: 0
+		+r(767)
+			margin-top: 10px
+		+r(639)
+			margin-top: 5px
+		+r(479)
+			margin-bottom: 10px
+	&__box
+		padding: 15px	0 15px
+		margin-left: 44px
+		+r(1239)
+			margin-left: 38px
+			padding: 12px 0 12px
+		&:not(:last-child)
+			border-bottom: 1px solid #e9e9e9
+		&:last-child
+			+r(1023)
+				padding-bottom: 2px
+		+r(1023)
+			margin-left: 0
+	&-box
+		&__title
+			padding-top: 15px
+			color: #1b1a1a
+			font-family: Roboto
+			font-size: 23px
+			font-weight: 400
+			line-height: 1
+			padding-bottom: 15px
+			position: relative
+			cursor: pointer
+			transition: 0.2s
+			+r(1239)
+				font-size: 22px
+				padding: 12px 0
+			+r(1023)
+				padding-left: 65px
+				font-size: 21px
+			+r(767)
+				font-size: 20px
+			+r(639)
+				font-size: 19px
+				padding-right: 32px
+			+r(479)
+				font-size: 18px
+				padding-left: 50px
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				left: -70px
+				width: 50px
+				height: 50px
+				border-radius: 50%
+				+r(1023)
+					left: 0
+				+r(479)
+					width: 40px
+					height: 40px
+			&:after
+				content: ''
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				right: 12px
+				width: 15px
+				height: 8px
+				background: url(../img/help-box-arrow.png) no-repeat center
+				background-size: 14px 8px
+				transition: 0.2s
+				+r(639)
+					transform: none
+					top: 19px
+			&.active
+				color: #fb9925
+				&:after
+						background: url(../img/help-box-arrow--active.svg) no-repeat center
+		&--inflammation
+			&:before
+				background: url(../img/help-icon1.png) no-repeat center #fb9925
+		&--joints
+			&:before
+				background: url(../img/help-icon2.png) no-repeat center #fb9925
+		&--leather 
+			&:before
+				background: url(../img/help-icon3.png) no-repeat center #fb9925
+		&--immunity
+			&:before
+				background: url(../img/help-icon4.png) no-repeat center #fb9925
+		&--heart
+			&:before
+				background: url(../img/help-icon5.png) no-repeat center #fb9925
+		&--freak
+			&:before
+				background: url(../img/help-icon6.png) no-repeat center #fb9925
+		&--liver
+			&:before
+				background: url(../img/help-icon7.png) no-repeat center #fb9925
+		&--brain
+			&:before
+				background: url(../img/help-icon8.png) no-repeat center #fb9925
+		&__text
+			color: #6f6f6f
+			font-family: Roboto
+			font-size: 18px
+			font-weight: 400
+			line-height: 28px
+			display: none
+			padding-bottom: 10px
+			+r(1239)
+				font-size: 17px
+				line-height: 26px
+			+r(1023)
+					padding-left: 66px
+					line-height: normal
+			+r(767)
+				font-size: 16px
+			+r(479)
+				padding-left: 51px
+
