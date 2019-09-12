@@ -1,0 +1,58 @@
+.review-button {
+  position: relative;
+  display: block;
+  height: 26px;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  color: #343637;
+  font-size: 14px;
+  line-height: 26px;
+  background-image: linear-gradient(
+    to bottom,
+    #f4f5f8,
+    #e8eaed
+  );
+  border: 1px solid #d4d4d4;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: box-shadow $transition-duration;
+
+  &:hover {
+    box-shadow: $shadow;
+  }
+
+  &--like {
+    width: 100px;
+    padding-left: 24px;
+  }
+
+  &--like svg {
+    top: 4px;
+    left: 9px;
+  }
+
+  &--like.active svg {
+    fill: green;
+  }
+
+  &--unlike {
+    width: 118px;
+    padding-left: 27px;
+  }
+
+  &--unlike svg {
+    top: 6px;
+    left: 9px;
+  }
+
+  &--unlike.active svg {
+    fill: crimson;
+  }
+}
+
+.review-button__icon {
+  position: absolute;
+  fill: #999;
+  transition: fill $transition-duration;
+}
