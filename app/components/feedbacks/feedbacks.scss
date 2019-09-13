@@ -1,5 +1,5 @@
 .feedbacks {
-  padding: 106px 0 101px;
+  padding: 60px 0;
 }
 
 .feedbacks__title {
@@ -38,6 +38,10 @@
   &--gray {
     margin-left: 30px;
   }
+}
+
+.feedback__stars {
+  margin-right: 10px;
 }
 
 .feedbacks__list-body {

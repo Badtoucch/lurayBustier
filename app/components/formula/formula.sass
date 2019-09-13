@@ -1,7 +1,5 @@
 .formula
-	padding: 125px 0 90px
-	+r(1239)
-		padding: 60px 0
+	padding: 95px 0 60px
 	&__content
 		display: flex
 	&__tooltip,&__ingridient
@@ -51,14 +49,18 @@
 			+r(1239)
 				line-height: 22px
 	&__title
+		position: relative
+		padding-left: 44px
 		color: #1f1e1e
 		font-size: 27px
 		font-weight: 500
-		line-height: 28px
+		line-height: (32 / 27)
 		+r(1239)
+			padding-left: 38px
 			font-size: 26px
 			line-height: normal
 		+r(1023)
+			padding-left: 0
 			font-size: 24px
 			text-align: center
 			br
@@ -67,16 +69,30 @@
 			font-size: 23px
 		+r(639)
 			font-size: 21px
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 3px
+			height: 117%
+			background-color: #fb9925
+			+r(1023)
+				display: none
 	&__subtitle
 		margin-top: 20px
+		padding-left: 44px
 		color: #6f6f6f
 		font-size: 19px
 		font-weight: 400
 		line-height: 30px
 		+r(1239)
+			padding-left: 38px
 			line-height: normal
 			margin-top: 15px
 		+r(1023)
+			padding-left: 0
 			font-size: 18px
 			text-align: center
 			margin-top: 10px
@@ -84,6 +100,7 @@
 				display: none
 		+r(767)
 			margin-top: 5px
+			line-height: (22 / 18)
 		+r(639)
 			font-size: 17px
 	&__content

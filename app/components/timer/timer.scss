@@ -77,8 +77,11 @@ $fz: 39px;
 }
 
 @include r(1239) {
+  $fz: 32px;
   .timer {
     align-items: center;
+    margin-right: 0;
+    padding-right: 100px;
   }
 
   .timer__description {
@@ -90,13 +93,23 @@ $fz: 39px;
   }
 
   .timer__value {
-    font-size: 32px;
+    font-size: $fz;
+  }
+  
+  .timer__divider {
+    position: relative;
+    top: -2px;
+    font-size: $fz;
+  }
+
+  .timer__discount {
+    right: 90px;
   }
 }
 
 @include r(1023) {
   .timer {
-    padding: 15px 55px 15px 15px;
+    padding: 25px 55px 25px 15px;
 
     &--modal {
       padding: 16px 0 15px;

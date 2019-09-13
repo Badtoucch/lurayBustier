@@ -66,10 +66,10 @@
     position: absolute;
     top: 50%;
     left: calc(50% + 5px);
-    width: 100%;
+    width: 110%;
     margin-left: 1px;
     border-bottom: 2px solid #f88126;
-    transform: translate(-50%, -50%) rotate(-7deg);
+    transform: translate(-50%, -50%) rotate(-15deg);
   }
 
   &--current {
@@ -84,6 +84,12 @@
   color: $common-gray;
   font-size: 18px;
   line-height: 1;
+}
+
+.price__asterisk {
+  position: relative;
+  top: -10px;
+  font-size: 18px;
 }
 
 .price--modal .price__cell {

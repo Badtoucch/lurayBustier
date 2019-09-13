@@ -72,12 +72,18 @@
 }
 
 .order__field {
+  &:-ms-input-placeholder,
   &::placeholder {
-    color: $common-gray;
+    color: $common-gray !important;
     font-size: 19px;
     transition: color $transition-duration;
   }
 
+  &:-ms-input-placeholder {
+    color: $common-gray !important;
+  }
+
+  &:-ms-input-placeholder,
   &:focus::placeholder {
     color: $transparent;
   }
@@ -101,6 +107,16 @@
   transition: width $transition-duration;
 }
 
+.order__button {
+  margin: 0 auto;
+}
+
+.order__note {
+  padding: 10px 0;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
 
 @include r(1239) {
   .order {

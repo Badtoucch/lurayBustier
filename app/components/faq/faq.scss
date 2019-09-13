@@ -1,7 +1,7 @@
 .faq {
   position: relative;
   z-index: 1;
-  padding: 83px 0 113px;
+  padding: 60px 0;
   color: white;
   background-image: url("../img/bg.jpg");
   overflow: hidden;
@@ -84,6 +84,7 @@
   line-height: (28 / 22);
   font-weight: 500;
   text-align: left;
+  text-shadow: inherit;
   background: none;
   border: none;
   cursor: pointer;

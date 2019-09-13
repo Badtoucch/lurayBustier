@@ -51,7 +51,7 @@ svg {
   font-size: 44px;
   font-weight: 900;
   line-height: 1;
-  color: #121212;
+  color: $common-black;
   text-align: center;
   @include r(1239) {
     font-size: 42px;
@@ -112,6 +112,10 @@ svg {
   @include r(1023) {
     padding-top: 0;
   }
+}
+
+.accent-text {
+	text-shadow: 1px 1px 1px transparentize(black, 0.25)
 }
 
 /* copy for other sections

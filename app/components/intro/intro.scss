@@ -4,7 +4,7 @@
 }
 
 .intro__top {
-  padding: 96px 0 94px;
+  padding: 60px 0;
   overflow: hidden;
 }
 
@@ -19,6 +19,7 @@
 
 .intro__title {
   margin-bottom: 28px;
+  color: $common-black;
   font-size: 48px;
   font-weight: 900;
   line-height: 1;
@@ -57,7 +58,7 @@
   max-width: 409px;
 }
 
-.intro__button {
+.intro__button-container {
   max-width: 251px;
 }
 
@@ -103,6 +104,13 @@
   border-radius: 50%;
 }
 
+.intro__note {
+  padding: 10px 0;
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+}
+
 @include r(1239) {
   .intro__content {
     display: flex;
@@ -134,7 +142,7 @@
   }
 
   .intro__timer {
-    max-width: 435px;
+    max-width: 405px;
     margin-bottom: 30px;
   }
 
@@ -201,6 +209,7 @@
   .intro__subtitle {
     margin-bottom: 20px;
     font-size: 16px;
+    line-height: (22 / 16);
   }
 
   .intro__timer {
