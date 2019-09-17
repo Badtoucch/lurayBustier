@@ -39,6 +39,28 @@
   padding: 20px;
   background-color: #f7f8fa;
   border-radius: 10px;
+  .order__title {
+    margin-bottom: 0;
+  }
+  .order__price {
+    margin-bottom: 20px;
+  }
+  .order__timer {
+    margin-bottom: 20px;
+  }
+  .order__row:last-of-type {
+    margin-bottom: 25px;
+  }
+  .order__button {
+    margin: 0;
+  }
+  .order__note {
+    max-width: 305px;
+    padding-bottom: 0;
+  }
+  .timer {
+    margin-right: 6px;
+  }
 }
 
 .modal__container {
@@ -51,12 +73,14 @@
 
 .modal__picture {
   flex-shrink: 0;
-  width: 300px;
+  width: 310px;
+  margin-right: 18px;
   align-self: center;
 }
 
 .modal__order {
-  margin-left: 25px;
+  margin-left: auto;
+  padding-top: 0;
 }
 
 @include r(1239) {
@@ -64,7 +88,6 @@
     margin-left: 25px;
   }
 }
-
 
 @include r(1023) {
   .modal__content {

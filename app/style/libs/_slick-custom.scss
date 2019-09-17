@@ -69,7 +69,8 @@
     font: inherit;
     color: #212122;
     font-size: 14px;
-    line-height: 32px;
+    line-height: 33px;
+    height: 34px;
     text-align: center;
     transition: color $transition-duration;
     cursor: pointer;
@@ -149,7 +150,6 @@
 
 @include r(1239) {
   .modal__slider {
-
     & .slick-dots {
       height: 470px;
     }
@@ -163,7 +163,6 @@
 
 @include r(1023) {
   .modal__slider {
-
     & .slick-dots {
       top: auto;
       bottom: 0;

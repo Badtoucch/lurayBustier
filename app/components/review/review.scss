@@ -62,7 +62,9 @@
   padding-left: 4px;
   border-bottom: 1px solid #d6d6d6;
 }
-
+.review:last-child .review__bottom {
+  border-bottom: 1px solid #fff;
+}
 .review__like-description {
   display: flex;
   align-items: baseline;
@@ -71,6 +73,9 @@
   color: #212122;
   font-size: 14px;
   line-height: 1;
+  @include r(479) {
+    align-items: center;
+  }
 }
 
 .review__buttons {

@@ -16,7 +16,7 @@
 
 .feedbacks__list-top {
   display: flex;
-  background-color:#dddddd;
+  background-color: #dddddd;
 }
 
 .feedbacks__list-total {
@@ -89,7 +89,7 @@
   .feedbacks__title {
     margin-bottom: 40px;
   }
-  
+
   .feedbacks__desktop {
     display: none;
   }
@@ -103,7 +103,7 @@
   .feedbacks__title {
     margin-bottom: 30px;
   }
-  
+
   .feedbacks__list-body {
     max-width: 640px;
     margin: 0 auto;
@@ -139,8 +139,40 @@
   .feedbacks__list-total--orange {
     max-width: 100%;
   }
-  
+
   .feedbacks__list-total--gray {
     display: none;
+  }
+  .feedbacks__adaptive {
+    position: relative;
+  }
+  .feedbacks__list .slick-arrow {
+    position: absolute;
+    top: -39px;
+    background-color: #fff;
+    border: none;
+  }
+  .feedbacks__list .slick-next {
+    right: 0;
+  }
+  .feedbacks__list .slick-prev {
+    left: 0;
+  }
+  .feedbacks__nav {
+    padding: 0;
+    border: none;
+  }
+  .feedbacks__list .slick-arrow:hover {
+    background-color: #fff;
+  }
+  .button,
+  .feedbacks__list .slick-arrow:hover::before {
+    color: #000;
+  }
+  .review__bottom {
+    padding-bottom: 5px !important;
+  }
+  .review__description {
+    padding-bottom: 0 !important;
   }
 }

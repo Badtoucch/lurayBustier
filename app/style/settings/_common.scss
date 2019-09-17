@@ -6,6 +6,9 @@ body {
   overflow-x: hidden;
   color: #444;
   background-color: #fff;
+  @include r(479) {
+    margin-top: 0 !important;
+  }
 }
 
 .page {
@@ -115,24 +118,28 @@ svg {
 }
 
 .accent-text {
-	text-shadow: 1px 1px 1px transparentize(black, 0.25)
+  text-shadow: 1px 1px 1px transparentize(black, 0.25);
 }
 
-/* copy for other sections
-
-@include r(1239) {
-		
+select:-moz-focusring,
+a:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
 }
-@include r(1023) {
-	
+*:focus,
+*:visited,
+*:active,
+*:hover {
+  outline: 0 !important;
 }
-@include r(767) {
-	
+a,
+a:focus,
+a:visited,
+a:active,
+a:hover {
+  outline: 0 !important;
 }
-@include r(639) {
-	
+*::-moz-focus-inner {
+  border: 0;
+  outline: none;
 }
-@include r(479) {
-	
-}
-*/

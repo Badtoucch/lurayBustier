@@ -22,6 +22,9 @@
   &--like {
     width: 100px;
     padding-left: 24px;
+    @include r(479) {
+      margin-right: 10px;
+    }
   }
 
   &--like svg {

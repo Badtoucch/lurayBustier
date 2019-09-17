@@ -65,7 +65,7 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: calc(50% + 5px);
+    left: 50%;
     width: 110%;
     margin-left: 1px;
     border-bottom: 2px solid #f88126;
@@ -90,6 +90,7 @@
   position: relative;
   top: -10px;
   font-size: 18px;
+  color: #fb9925;
 }
 
 .price--modal .price__cell {
@@ -131,7 +132,7 @@
 
   .price__cell {
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     max-width: 100%;
     margin-right: 0;
     margin-bottom: 5px;

@@ -23,8 +23,7 @@
   line-height: 1;
   transition: color $transition-duration;
 
-  &:hover,
-  &:focus {
+  &:hover {
     color: $common-orange;
   }
 }

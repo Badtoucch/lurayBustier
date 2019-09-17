@@ -60,6 +60,15 @@
 
 .intro__button-container {
   max-width: 251px;
+  @include r(1239) {
+    display: block;
+    margin-left: 75px;
+  }
+  @include r(767) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .intro__bottom {
@@ -109,6 +118,7 @@
   font-size: 16px;
   font-style: italic;
   text-align: center;
+  color: #fb9925;
 }
 
 @include r(1239) {
@@ -187,12 +197,14 @@
   .intro {
     padding-bottom: 0 !important;
   }
-  
+
   .intro__top {
     padding-top: 0;
     padding-bottom: 40px;
   }
-
+  .intro__bottom {
+    padding: 20px 0;
+  }
   .intro__text {
     max-width: 400px;
   }
