@@ -1,7 +1,5 @@
-$accentColor: #009fdb;
-
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   overflow-x: hidden;
   color: #444;
@@ -51,13 +49,14 @@ svg {
 }
 
 .title {
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 900;
-  line-height: 1;
-  color: $common-black;
+  line-height: 50px;
+  color: #37352f;
   text-align: center;
   @include r(1239) {
     font-size: 42px;
+    line-height: 1.1;
   }
   @include r(1023) {
     font-size: 36px;
@@ -82,44 +81,10 @@ svg {
 .text-black {
   font-weight: 900;
 }
-.accent-color {
-  color: $accentColor;
-}
+
 .nowrap {
   white-space: nowrap;
-}
-
-.accent-orange {
-  color: $common-orange;
-}
-
-.title-icon {
-  padding-top: 90px;
-  position: relative;
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    background: url(../img/title-img.png) no-repeat center;
-    width: 83px;
-    height: 65px;
-    @include r(1023) {
-      display: none;
-    }
-  }
-  @include r(1239) {
-    padding-top: 80px;
-  }
-  @include r(1023) {
-    padding-top: 0;
-  }
-}
-
-.accent-text {
-  text-shadow: 1px 1px 1px transparentize(black, 0.25);
-}
+}g
 
 select:-moz-focusring,
 a:-moz-focusring {
