@@ -1,34 +1,125 @@
 .header
-	padding: 40px 0 70px
-	background: url(../img/bg-header.jpg) center no-repeat
-	background-size: cover
+	padding: 70px 0 70px
+	background: url(../img/header-gitl.png) no-repeat 55% 50%, url(../img/bg-header.jpg) center no-repeat
+	background-size: contain, cover
+	+r(1239)
+		padding: 60px 0
+		background-position: 60% 50%, center
+		background-size: contain, cover
+	+r(1023)
+		background: url(../img/bg-header.jpg) center no-repeat
+		background-size: cover
+		padding: 40px 0
+	+r(767)
+		padding: 30px 0
 	&-content
 		margin-top: 35px
 		display: flex
 		justify-content: space-between
+		+r(1239)
+			margin-top: 25px
+		+r(1023)
+			flex-wrap: wrap
+			justify-content: space-around
+			align-items: center
+		+r(767)
+			margin-top: 20px
+		+r(639)
+			margin-top: 10px
+		+r(479)
+			margin-top: 5px
 	&-info
 		max-width: 440px
+		+r(1023)
+			max-width: 100%
+			width: 100%
+			margin-bottom: 15px
+		+r(767)
+			margin-bottom: 10px
+		+r(639)
+			margin-bottom: 15px
 	&-title
 		text-align: left
 		font-size: 50px
+		+r(1239)
+			font-size: 44px
+		+r(1023)
+			font-size: 36px
+			text-align: center
+			letter-spacing: -1px
+		+r(767)
+			font-size: 32px
+		+r(639)
+			font-size: 29px
+		+r(479)
+			font-size: 26px
 	&-subtitle
 		margin-top: 36px
 		color: #e57e5d
 		font-size: 32px
 		font-style: italic
 		line-height: 1
+		+r(1239)
+			font-size: 28px
+			margin-top: 30px
+		+r(1023)
+			margin-top: 15px
+			font-size: 25px
+			text-align: center
+		+r(767)
+			font-size: 21px
+			margin-top: 10px
+		+r(639)
+			font-size: 19px
+			
 	&-list
 		margin-top: 30px
+		+r(1239)
+			margin-top: 25px
+		+r(1023)
+			margin-top: 20px
+			display: flex
+			justify-content: space-between
+		+r(767)
+			margin-top: 15px
+		+r(639)
+			flex-direction: column
+			max-width: 310px
+			margin-right: auto
+			margin-left: auto
 		&__item
 			color: #37352f
 			font-size: 21px
 			line-height: 26px
 			padding-left: 78px
 			position: relative
+			+r(1239)
+				font-size: 20px
+				line-height: normal
+				padding-left: 75px
+			+r(1023)
+				padding-left: 0
+				padding-top: 65px
+				font-size: 19px
+				text-align: center
+			+r(767)
+				font-size: 16px
+				padding-top: 55px
+			+r(639)
+				padding-left: 55px
+				padding-top: 0
+				text-align: left
+			&:nth-child(2)
+				margin: 0 10px
+				+r(639)
+					margin: 0
+				
 			b
 				display: block
 			&:not(:last-child)
 				margin-bottom: 25px
+				+r(639)
+					margin-bottom: 10px
 			&::before
 				content: ''
 				position: absolute
@@ -40,6 +131,20 @@
 				border: 1px dotted #e88f72
 				background-color: #ffffff
 				border-radius: 50%
+				+r(1023)
+					top: 0
+					left: 50%
+					transform: translateX(-50%)
+				+r(767)
+					width: 50px
+					height: 50px
+				+r(639)
+					left: 0
+					top: 50%
+					transform: translateY(-50%) translateX(0)
+					width: 40px
+					height: 40px
+					background-size: 60% !important
 			&--icon1
 				&::before
 					background: url(../img/icon-head1.png) no-repeat 63% 50% #ffffff
@@ -49,10 +154,25 @@
 			&--icon3
 				&::before
 					background: url(../img/icon-head3.png) no-repeat 54% 50% #ffffff
+	&-box__pack
+		position: relative
+		bottom: -230px
+		left: -40px
+		+r(1239)
+			max-width: 279px
+			left: -25px
+			bottom: -210px
+		+r(1023)
+			left: 0
+			bottom: 0
+		+r(639)
+			max-width: 230px
 
 .logo
 	padding-left: 62px
 	position: relative
+	+r(1239)
+		padding-left: 60px
 	&::before
 		content: ''
 		position: absolute
@@ -61,6 +181,16 @@
 		background: url(../img/icon-logo.svg) no-repeat center
 		width: 50px
 		height: 42px
+		background-size: contain
+		+r(1023)
+			width: 44px
+			height: 40px
+	+r(1023)
+		padding-left: 50px
+		max-width: 310px
+		display: block
+		margin-right: auto
+		margin-left: auto
 .pack
 	position: relative
 	&::before
@@ -71,18 +201,176 @@
 		background: url(../img/icon-pack.png) no-repeat center
 		width: 101px
 		height: 101px
-
+		+r(1023)
+			height: 80px
+			width: 80px
+			background-size: contain
+	
 //form
 .form
 	border: 4px solid #649f36
 	background-color: #ffffff
 	border-radius: 10px
-	padding: 25px 30px 32px
+	padding: 25px 30px 12px
+	position: relative
+	+r(1239)
+			padding: 25px 25px 12px
+			width: 280px
+	&::before
+		content: '-50%'
+		position: absolute
+		top: -40px
+		right: -40px
+		width: 82px
+		height: 82px
+		background: url(../img/icon-discount.png) no-repeat center
+		background-size: contain
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #ffffff
+		font-size: 21px
+		font-weight: 900
+		line-height: 1
+		transform: rotate(-20deg)
+		+r(1239)
+			right: -20px
+			top: -55px
+		+r(1023)
+			font-size: 19px
+			width: 70px
+			height: 70px
+			right: -35px
+			top: -35px
 	&__title
 		color: #000000
 		font-size: 24px
 		font-weight: 700
 		line-height: 1
 		text-align: center
+		margin-bottom: 16px
 		&--color
 			color: #eb472c
+	&__line
+		margin-top: 15px
+		width: 100%
+		height: 1px
+		background-color: #d1d0d0
+		margin-bottom: 18px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			bottom: -5px
+			left: 50%
+			transform: translateX(-50%) rotate(-135deg)
+			width: 10px
+			height: 10px
+			border-left: 1px solid #d1d0d0
+			border-top: 1px solid #d1d0d0
+			background-color: #fff
+	&-timer
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 19px
+		&__when
+			width: 50px
+			height: 50px
+			background-color: #649f36
+			border-radius: 50%
+			text-align: center
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #ffffff
+			font-size: 30px
+			font-weight: 700
+			line-height: 1
+		&__title
+			color: #000000
+			font-size: 20px
+			font-weight: 400
+			line-height: 22px
+			text-align: center
+			margin-bottom: 9px
+		&__sup
+			margin: 0 9px
+			color: #000000
+			font-family: Arial, Helvetica, sans-serif
+			font-size: 28px
+			font-weight: 700
+	&-icon
+		display: block
+		margin: 19px auto 0
+
+
+
+
+
+
+
+
+
+
+.price
+	display: flex
+	justify-content: space-between
+	&::after
+		margin-top: 4px
+		content: ''
+		display: block
+		width: 1px
+		height: 50px
+		background-color: #d1d0d0
+		order: 2
+	&-old
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		padding-bottom: 4px
+		order: 1
+		&__title
+			color: #666666
+			font-size: 13px
+			font-weight: 400
+			line-height: 1
+		&__count
+			font-size: 28px
+			color: #a2a1a1
+			line-height: 1
+			.x_currency
+				font-size: 16px
+			.x_price_previous
+				position: relative
+				&:before, &:after
+					content: ''
+					position: absolute
+					top: 50%
+					left: 50%
+					transform: translate(-50%, 40%) rotate(-20deg)
+					width: 103%
+					height: 1.2px
+					background-color: #f01d07
+				&:after
+					transform: translate(-50%, 40%) rotate(20deg)
+	&-new
+		order: 3
+		&__title
+			color: #000000
+			font-size: 14px
+			font-weight: 400
+			line-height: 1
+			margin-bottom: 3px
+		&__count
+			font-size: 40px
+			font-weight: 700
+			letter-spacing: -2px
+			line-height: 1
+			color: #eb4429
+			.x_currency
+				font-size: 18px
+				font-weight: 400
+				letter-spacing: normal
+			.x_price_current
+				line-height: 1
