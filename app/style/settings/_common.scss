@@ -2,8 +2,9 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   overflow-x: hidden;
-  color: #444;
+  color: #666;
   background-color: #fff;
+
   @include r(479) {
     margin-top: 0 !important;
   }
@@ -30,19 +31,24 @@ svg {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 25px;
+
   @include r(1239) {
     max-width: 1024px;
   }
+
   @include r(1023) {
     max-width: 768px;
     padding: 0 10px;
   }
+
   @include r(767) {
     max-width: 640px;
   }
+
   @include r(639) {
     max-width: 480px;
   }
+
   @include r(479) {
     max-width: 100%;
   }
@@ -54,20 +60,25 @@ svg {
   line-height: 50px;
   color: #37352f;
   text-align: center;
+
   @include r(1239) {
     font-size: 42px;
     line-height: 1.1;
   }
+
   @include r(1023) {
     font-size: 36px;
     line-height: 1.1;
   }
+
   @include r(767) {
     font-size: 32px;
   }
+
   @include r(639) {
     font-size: 29px;
   }
+
   @include r(479) {
     font-size: 26px;
   }
@@ -75,7 +86,7 @@ svg {
 
 .text-bold {
   font-weight: 700;
-  color: #16171a;
+  color: #37352f;
 }
 
 .text-black {
@@ -84,19 +95,21 @@ svg {
 
 .nowrap {
   white-space: nowrap;
-}g
+}
 
-select:-moz-focusring,
+g select:-moz-focusring,
 a:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
 }
+
 *:focus,
 *:visited,
 *:active,
 *:hover {
   outline: 0 !important;
 }
+
 a,
 a:focus,
 a:visited,
@@ -104,7 +117,12 @@ a:active,
 a:hover {
   outline: 0 !important;
 }
+
 *::-moz-focus-inner {
   border: 0;
   outline: none;
+}
+
+.product--color{
+  color: #f1a583;
 }
