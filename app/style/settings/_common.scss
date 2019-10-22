@@ -2,8 +2,9 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   overflow-x: hidden;
-  color: #444;
+  color: #666;
   background-color: #fff;
+  background: url(../img/1bg.svg) repeat-y center;
   @include r(479) {
     margin-top: 0 !important;
   }
@@ -50,10 +51,11 @@ svg {
 
 .title {
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 700;
   line-height: 50px;
   color: #37352f;
-  text-align: center;
+	text-align: center;
+	letter-spacing: -2.4px;
   @include r(1239) {
     font-size: 42px;
     line-height: 1.1;
@@ -73,9 +75,9 @@ svg {
   }
 }
 
-.text-bold {
+.text-bold,
+b {
   font-weight: 700;
-  color: #16171a;
 }
 
 .text-black {
@@ -84,9 +86,8 @@ svg {
 
 .nowrap {
   white-space: nowrap;
-}g
-
-select:-moz-focusring,
+}
+g select:-moz-focusring,
 a:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
@@ -107,4 +108,7 @@ a:hover {
 *::-moz-focus-inner {
   border: 0;
   outline: none;
+}
+.product--color {
+  color: #f1a583;
 }

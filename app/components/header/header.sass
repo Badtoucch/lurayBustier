@@ -1,0 +1,88 @@
+.header
+	padding: 40px 0 70px
+	background: url(../img/bg-header.jpg) center no-repeat
+	background-size: cover
+	&-content
+		margin-top: 35px
+		display: flex
+		justify-content: space-between
+	&-info
+		max-width: 440px
+	&-title
+		text-align: left
+		font-size: 50px
+	&-subtitle
+		margin-top: 36px
+		color: #e57e5d
+		font-size: 32px
+		font-style: italic
+		line-height: 1
+	&-list
+		margin-top: 30px
+		&__item
+			color: #37352f
+			font-size: 21px
+			line-height: 26px
+			padding-left: 78px
+			position: relative
+			b
+				display: block
+			&:not(:last-child)
+				margin-bottom: 25px
+			&::before
+				content: ''
+				position: absolute
+				top: -5px
+				left: 0
+				width: 60px
+				height: 60px
+				box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.03)
+				border: 1px dotted #e88f72
+				background-color: #ffffff
+				border-radius: 50%
+			&--icon1
+				&::before
+					background: url(../img/icon-head1.png) no-repeat 63% 50% #ffffff
+			&--icon2
+				&::before
+					background: url(../img/icon-head2.png) no-repeat 50% 50% #ffffff
+			&--icon3
+				&::before
+					background: url(../img/icon-head3.png) no-repeat 54% 50% #ffffff
+
+.logo
+	padding-left: 62px
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		top: -5px
+		left: 0
+		background: url(../img/icon-logo.svg) no-repeat center
+		width: 50px
+		height: 42px
+.pack
+	position: relative
+	&::before
+		content: ''
+		position: absolute
+		bottom: 35px
+		left: -15px
+		background: url(../img/icon-pack.png) no-repeat center
+		width: 101px
+		height: 101px
+
+//form
+.form
+	border: 4px solid #649f36
+	background-color: #ffffff
+	border-radius: 10px
+	padding: 25px 30px 32px
+	&__title
+		color: #000000
+		font-size: 24px
+		font-weight: 700
+		line-height: 1
+		text-align: center
+		&--color
+			color: #eb472c
