@@ -29,15 +29,17 @@
     flex-wrap: wrap;
     border: 4px solid rgba(0, 0, 0, 0);
     position: relative;
-    perspective: 700px;
+    // perspective: 700px;
+    perspective-origin: 50% 0px;
     &::after {
       position: absolute;
       content: "";
       width: 665px;
       height: 230px;
       top: -19px;
-      left: -8px;
-      transform: rotateX(-8deg) skew(0deg, 0deg);
+      left: 2px;
+      transform: perspective(610px) rotateX(-6deg) rotateY(6deg) skewY(1deg);
+      transform-origin: 50% 131px 0;
       border: 4px solid #649f36;
       border-radius: 10px;
     }
