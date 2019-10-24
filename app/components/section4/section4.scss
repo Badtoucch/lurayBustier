@@ -1,7 +1,22 @@
+.price-old__count .x_price_previous {
+  display: inline-block;
+}
+
 .section4 {
   padding: 164px 0 152px;
   min-height: 880px;
   position: relative;
+
+  @include r(1023) {
+    min-height: auto;
+  }
+
+  .container {
+    @include r(639) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 
   .title {
     max-width: 565px;
@@ -11,6 +26,13 @@
     text-align: left;
     position: relative;
 
+    @include r(1023) {
+      max-width: none;
+      margin-left: 0;
+      text-align: center;
+    }
+
+
     &::before {
       width: 50px;
       height: 42px;
@@ -19,18 +41,69 @@
       top: 0;
       content: "";
       background: url("../img/icon-crown.png") no-repeat;
+
+      @include r(1023) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
   }
-
+  .header-box {
+    @include r(639) {
+      margin-top: 30px;
+      order: 1;
+    }
+  }
   .form {
     width: 660px;
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0);
     border: 4px solid rgba(0, 0, 0, 0);
     position: relative;
-    // perspective: 700px;
-    perspective-origin: 50% 0px;
+    z-index: 0;
+
+    @include r(1239) {
+      width: 500px;
+      margin-left: 20px;
+      padding: 0;
+    }
+
+    @include r(1023) {
+      width: 280px;
+      margin-right: 60px;
+      margin-left: auto;
+      padding: 25px 25px 12px;
+      border: 4px solid #649f36;
+    }
+
+    @include r(767) {
+      margin-right: 30px;
+    }
+
+    @include r(639) {
+      margin: 0 auto;
+    }
+
+    &::before {
+      top: 10px;
+      right: unset;
+
+      @include r(1239) {
+        top: -6px;
+      }
+
+      @include r(1023) {
+        right: -35px;
+        top: -35px;
+      }
+      @include r(479) {
+        top: -41px;
+        right: -20px;
+      }
+    }
+
     &::after {
       position: absolute;
       content: "";
@@ -42,6 +115,18 @@
       transform-origin: 50% 131px 0;
       border: 4px solid #649f36;
       border-radius: 10px;
+      z-index: -1;
+
+      @include r(1239) {
+        width: 511px;
+        height: 190px;
+        top: -29px;
+        left: -6px;
+      }
+
+      @include r(1023) {
+        display: none;
+      }
     }
   }
 
@@ -50,20 +135,54 @@
     margin-bottom: 0;
     padding-left: 110px;
     text-align: left;
+
+    @include r(1239) {
+      width: auto;
+      max-width: 287px;
+      padding-left: 100px;
+    }
+
+    @include r(1023) {
+      margin-bottom: 16px;
+      padding-left: 0;
+      text-align: center;
+    }
   }
 
   .price {
     width: 40%;
     margin-bottom: 32px;
+
+    @include r(1239) {
+      margin-bottom: 23px;
+    }
+
+    @include r(1023) {
+      width: 100%;
+      margin-bottom: 0;
+    }
   }
 
   .form__line,
   .form-icon {
     display: none;
+
+    @include r(1023) {
+      display: block;
+
+      img {
+        margin-top: 0;
+      }
+    }
   }
 
   .form-timer {
     margin-bottom: 0;
+
+    @include r(1023) {
+      width: 100%;
+      margin-bottom: 19px;
+    }
   }
 
   .form-timer__title {
@@ -71,23 +190,68 @@
     margin-bottom: 0;
     padding-top: 9px;
     text-align: left;
+
+    @include r(1239) {
+      margin-right: 8px;
+    }
+
+    @include r(1023) {
+      width: 100%;
+      margin-bottom: 9px;
+      margin-right: 0;
+      padding-top: 0;
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .form-timer__sup {
+    @include r(1239) {
+      margin: 0 3px;
+    }
+
+    @include r(1023) {
+      margin: 0 9px;
+    }
   }
 
   .btn.ever-popup-btn {
     width: 40%;
     margin-left: 35px;
-  }
+    transition: unset;
 
-  .form::before {
-    top: 10px;
-    right: unset;
+    @include r(1239) {
+      margin-left: 8px;
+    }
+
+    @include r(1023) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+}
+
+.section4__wrapp {
+  @include r(1023) {
+    position: relative;
   }
 }
 
 .section4-bg {
   position: absolute;
   bottom: 0;
-  right: 260px;
+  right: calc(50% - 690px);
+
+  @include r(1239) {
+    width: 690px;
+  }
+
+  @include r(1023) {
+    display: none;
+  }
 
   &::before {
     content: "";
@@ -103,8 +267,38 @@
 .section4__pack {
   width: 216px;
   position: absolute;
-  right: 597px;
+  right: calc(50% - 354px);
   bottom: -80px;
+
+  img {
+    display: block;
+  }
+
+  @include r(1239) {
+    right: calc(50% - 315px);
+  }
+
+  @include r(1023) {
+    width: 270px;
+    right: unset;
+    left: 80px;
+    bottom: 0;
+  }
+
+  @include r(767) {
+    width: 290px;
+    left: 10px;
+    bottom: -10px;
+  }
+
+  @include r(639) {
+    width: 100%;
+    position: static;
+
+    img {
+      margin: 0 auto;
+    }
+  }
 
   &::before {
     content: "";
@@ -115,5 +309,21 @@
     left: -37px;
     background: url("../img/icon-best.png") no-repeat;
 
+    @include r(1023) {
+      top: -20px;
+      left: -28px;
+    }
+
+    @include r(767) {
+      top: -40px;
+      left: -10px;
+    }
+    @include r(639) {
+      left: 53px;
+    }
+    @include r(479) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
