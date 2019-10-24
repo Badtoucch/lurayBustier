@@ -6,9 +6,10 @@
   .section3-list {
     margin-bottom: 0;
   }
+
   .section3-list__title {
     font-size: 22px;
-    border-bottom:none;
+    border-bottom: none;
   }
 
   .section3-list__item {
@@ -33,10 +34,28 @@
   .section3-list__item:nth-child(2) .section3-list__img {
     margin-bottom: 25px;
   }
+
   .section3-list__text {
     margin-top: 0;
   }
+
   .section3-list::before {
     z-index: 0;
+  }
+
+  .section3-list__item:nth-child(3) {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 120px;
+      height: 180px;
+      top: 190px;
+      left: 7px;
+      background: url("../img/pack.png") no-repeat;
+      background-size: contain;
+      z-index: 0;
+    }
   }
 }

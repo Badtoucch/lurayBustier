@@ -4,26 +4,6 @@
   background: url("../img/bg-header.jpg") no-repeat 50%;
   background-size: cover;
 
-  &__footer {
-    max-width: 970px;
-    margin: 0 auto;
-    padding: 27px 70px;
-    font-weight: 600;
-    text-align: center;
-    border-radius: 100px;
-    color: #ffffff;
-    font-size: 25px;
-    line-height: 28px;
-    background-color: #f1a583;
-    @include r(1023) {
-      padding: 27px 40px;
-      border-radius: 50px;
-    }
-    @include r(639) {
-      padding: 27px 20px;
-    }
-  }
-
   .title {
     padding-top: 66px;
     margin-bottom: 63px;
@@ -96,4 +76,26 @@
 
 .section3-list__item:nth-child(2) .section3-list__img {
   margin-bottom: 9px;
+}
+
+.section-footer {
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 27px 70px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 100px;
+  color: #ffffff;
+  font-size: 25px;
+  line-height: 28px;
+  background-color: #f1a583;
+
+  @include r(1023) {
+    padding: 27px 40px;
+    border-radius: 50px;
+  }
+
+  @include r(639) {
+    padding: 27px 20px;
+  }
 }

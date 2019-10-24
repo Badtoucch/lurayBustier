@@ -1,0 +1,168 @@
+.section6 {
+  padding-top: 118px;
+  padding-bottom: 154px;
+
+  .section-footer {
+    color: #36352e;
+    background-color: #faf0e9;
+  }
+
+  .title {
+    padding-top: 74px;
+    margin-bottom: 23px;
+    position: relative;
+
+    &::before {
+      width: 50px;
+      height: 42px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 0;
+      content: "";
+      background: url("../img/icon-crown.png") no-repeat;
+    }
+  }
+
+  .content {
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    .center {
+      width: 400px;
+      margin: 0 90px;
+    }
+
+    .left {
+      .list__item {
+        &:first-child {
+          margin-left: auto;
+          margin-right: 0;
+
+          &::before {
+            left: 45px;
+          }
+        }
+
+        &:last-child {
+          max-width: 310px;
+          margin-right: 48px;
+        }
+      }
+
+      .list__subtitle {
+        padding-top: 26px;
+        text-align: right;
+      }
+
+      .list__text {
+        text-align: right;
+      }
+    }
+
+    .right {
+      .list__item::before {
+        transform: rotate(180deg);
+      }
+
+      .list__item:first-child::before {
+        right: 47px;
+      }
+
+      .list__item:last-child {
+        max-width: 310px;
+        margin-left: 48px;
+
+        &::before {
+          right: 5px;
+        }
+      }
+    }
+  }
+
+  .header-box__pack {
+    position: absolute;
+    top: -46px;
+    bottom: unset;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+
+    img {
+      position: relative;
+      // z-index: 5;
+    }
+  }
+
+  .pack::before {
+    z-index: 2;
+  }
+
+  .pack::after {
+    content: "";
+    position: absolute;
+    width: 527px;
+    height: 524px;
+    top: -22px;
+    left: calc(50% - 15px);
+    transform: translateX(-50%);
+    background: url("../img/item-bg-big.png") no-repeat;
+    z-index: -50;
+  }
+
+  .section-footer {
+    padding: 30px 40px;
+    margin-bottom: 36px;
+  }
+
+  .btn {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+.list {
+  &__item {
+    max-width: 290px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 447px;
+      height: 5px;
+      top: 65px;
+      background: url("../img/line-dot.png") no-repeat;
+      z-index: 0;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 32px;
+    @extend .text-bold;
+    font-size: 22px;
+    line-height: 25px;
+    color: #36352e;
+
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+.subtitle {
+  max-width: 743px;
+  margin: 0 auto 100px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
