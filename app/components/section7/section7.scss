@@ -1,0 +1,15 @@
+.section7 {
+
+  .section3-list {
+    margin-bottom: 0;
+  }
+
+  .section3-list__item {
+    width: auto;
+    max-width: 320px;
+  }
+
+  .section3-list__item:nth-child(2) .section3-list__img {
+    margin-bottom: 0;
+  }
+}
