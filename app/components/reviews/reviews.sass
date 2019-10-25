@@ -1,0 +1,162 @@
+.reviews
+	background: url(../img/section-bg.jpg) no-repeat center
+	background-size: cover
+	padding: 120px 0 105px
+	+r(1239)
+		padding: 60px 0
+	&-content
+		margin-top: 47px
+		+r(1239)
+			margin-top: 30px
+		+r(1023)
+			margin-top: 20px
+		+r(479)
+			max-width: 320px
+			display: block
+			margin-right: auto !important
+			margin-left: auto !important
+	&-box
+		background-color: #fff
+		border-radius: 5px
+	&__img
+		position: relative
+		z-index: 0
+		img
+			border-radius: 5px 5px 0 0
+		&:before
+			z-index: 1
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background: url(../img/lock-review.png) no-repeat center
+	&__time
+		position: relative
+		margin-top: -2px
+		display: flex
+		&-before, &-after
+			font-family: "Open Sans"
+			flex: 1
+			line-height: 1
+			text-align: center
+			padding: 6px 0 12px
+			color: #ffffff
+			font-size: 24px
+			font-weight: 700
+			+r(1239)
+				font-size: 22px
+			+r(1023)
+				font-size: 20px
+				padding-bottom: 8px
+		&-before
+			background-color: #dedede
+		&-after
+			background-color: #f1a583
+	&__name
+		padding: 30px 30px 12px
+		color: #36352e
+		font-size: 22px
+		font-weight: 700
+		line-height: 1
+		+r(1239)
+			font-size: 20px
+			padding-top: 25px
+			padding-bottom: 8px
+		+r(1023)
+			font-size: 18px
+			padding-top: 15px
+			padding-left: 20px
+			padding-right: 20px
+		+r(639)
+			font-size: 17px
+	&__rating
+		padding-left: 30px
+		padding-bottom: 25px
+		+r(1239)
+			padding-bottom: 20px
+		+r(1023)
+			padding-left: 20px
+	.slick-slider
+		margin-left: -15px
+		margin-right: -15px
+		+r(1023)
+			margin-right: -10px
+			margin-left: -10px
+		+r(767)
+			margin-right: -5px
+			margin-left: -5px
+	.slick-slide
+		margin: 0 15px
+		+r(1023)
+			margin: 0 10px
+		+r(767)
+			margin: 0 5px
+	.slick-dots
+		position: static
+		margin-top: 30px
+		+r(1239)
+			margin-top: 25px
+		+r(1023)
+			margin-top: 20px
+		+r(767)
+			margin-top: 15px
+		+r(639)
+			margin-top: 10px
+	.slick-dots li
+		width: 16px
+		height: 16px
+		margin: 0 15px
+		+r(767)
+			margin: 0 10px
+		+r(639)
+			width: 10px
+			height: 10px
+	.slick-dots li button
+		width: 16px
+		height: 16px
+		+r(639)
+			width: 10px
+			height: 10px
+	.slick-dots li button:before
+		width: 16px
+		height: 16px
+		font-size: 0
+		background-color: #dedede
+		border-radius: 50%
+		opacity: 1
+		+r(639)
+			width: 10px
+			height: 10px
+	.slick-dots li.slick-active button:before
+		background-color: #ffbab2
+
+.title-crown
+	padding-top: 60px
+	position: relative
+	+r(1239)
+		padding-top: 50px
+	+r(1023)
+		padding-top: 45px
+	+r(767)
+		padding-top: 35px
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 50%
+		transform: translateX(-50%)
+		background: url(../img/icon-crown.png) no-repeat center
+		width: 50px
+		height: 42px
+		+r(1023)
+			width: 45px
+			height: 37px
+			background-size: contain
+		+r(767)
+			width: 40px
+			height: 32px
+
+
+
