@@ -4,8 +4,13 @@
 	padding: 120px 0 105px
 	+r(1239)
 		padding: 60px 0
+	.title
+		br
+			+r(639)
+				display: none
 	&-content
 		margin-top: 47px
+		position: relative
 		+r(1239)
 			margin-top: 30px
 		+r(1023)
@@ -15,6 +20,8 @@
 			display: block
 			margin-right: auto !important
 			margin-left: auto !important
+	&-slider-container
+		position: relative
 	&-box
 		background-color: #fff
 		border-radius: 5px
@@ -54,30 +61,36 @@
 			background-color: #dedede
 		&-after
 			background-color: #f1a583
+	&-info
+		padding: 25px 20px
+		+r(1239)
+			padding: 20px 
+		+r(1023)
+			padding: 15px
 	&__name
-		padding: 30px 30px 12px
+		padding: 0px 0 12px
 		color: #36352e
 		font-size: 22px
 		font-weight: 700
-		line-height: 1
+		line-height: 1.2
 		+r(1239)
 			font-size: 20px
-			padding-top: 25px
 			padding-bottom: 8px
 		+r(1023)
 			font-size: 18px
-			padding-top: 15px
-			padding-left: 20px
-			padding-right: 20px
 		+r(639)
 			font-size: 17px
 	&__rating
-		padding-left: 30px
-		padding-bottom: 25px
+		padding-left: 0
+		padding-bottom: 0
 		+r(1239)
-			padding-bottom: 20px
+			padding-bottom: 0
 		+r(1023)
-			padding-left: 20px
+			padding-left: 0
+	&__text
+		margin-top: 15px
+		font-size: 17px
+		line-height: 1.3
 	.slick-slider
 		margin-left: -15px
 		margin-right: -15px
@@ -126,11 +139,55 @@
 		background-color: #dedede
 		border-radius: 50%
 		opacity: 1
+		transition: 0.2s
 		+r(639)
 			width: 10px
 			height: 10px
 	.slick-dots li.slick-active button:before
 		background-color: #ffbab2
+		transition: 0.2s
+	.slick-dots li button:hover:before
+		background-color: #c6c4c4
+	.slick-track
+		display: flex !important
+	.slick-slide
+		height: auto
+		+r(479)
+			height: 100%
+	&__arrow-left, &__arrow-right
+		position: absolute
+		top: 50%
+		transform: translateY(-140%)
+		z-index: 40
+		fill: #dedede
+		cursor: pointer
+		transition: 0.2s
+		&:hover
+			fill: #f1a583
+		&:focus, &:active
+			fill: #f3452a
+		+r(1360)
+			bottom: -7px
+			top: auto
+			transform: none
+		+r(639)
+			display: none !important
+	&__arrow-left
+		left: -80px
+		+r(1360)
+			left: 280px
+		+r(1023)
+			left: 200px
+		+r(767)
+			left: 120px
+	&__arrow-right
+		right: -80px
+		+r(1360)
+			right: 280px
+		+r(1023)
+			right: 200px
+		+r(767)
+			right: 120px
 
 .title-crown
 	padding-top: 60px

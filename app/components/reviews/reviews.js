@@ -1,10 +1,11 @@
 $(".reviews-content").slick({
   dots: true,
   infinite: true,
-  arrows: false,
   speed: 300,
   slidesToShow: 3,
-  slidesToScroll: 3,
+	slidesToScroll: 3,
+	nextArrow: '.reviews__arrow-right',
+  prevArrow: '.reviews__arrow-left',
   responsive: [
     {
       breakpoint: 768,
@@ -24,7 +25,8 @@ $(".reviews-content").slick({
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        adaptiveHeight: true
       }
     }
   ]
