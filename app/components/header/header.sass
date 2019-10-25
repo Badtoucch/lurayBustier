@@ -110,7 +110,8 @@
 				padding-top: 0
 				text-align: left
 			&:nth-child(2)
-				margin: 0 10px
+				+r(767)
+					margin: 0 10px
 				+r(639)
 					margin: 0
 				
@@ -167,6 +168,22 @@
 			bottom: 0
 		+r(639)
 			max-width: 230px
+	&-form__main
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-left: -137px
+				width: 96%
+				height: 92%
+				border: 4px solid #649f36
+				background-color: #ffffff
+				transition: transform 2s
+				transform-origin: 50% 50%
+				transform: perspective(400px) rotateX(-6deg) translateY(-45%)
+				border-radius: 10px
+				z-index: -1
 
 .logo
 	padding-left: 62px
@@ -208,11 +225,9 @@
 	
 //form
 .form
-	border: 4px solid #649f36
-	background-color: #ffffff
-	border-radius: 10px
 	padding: 25px 30px 12px
 	position: relative
+	z-index: 0
 	+r(1239)
 			padding: 25px 25px 12px
 			width: 280px
