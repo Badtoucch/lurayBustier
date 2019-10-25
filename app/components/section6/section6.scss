@@ -233,9 +233,11 @@
       height: 20px;
       background-color: #faf0e9;
     }
+
     @include r(639) {
       padding: 20px;
-    }    
+    }
+
     @include r(479) {
       padding: 10px;
     }
@@ -319,7 +321,7 @@
     line-height: 26px;
 
     @include r(767) {
-      line-height: 22px;
+      // line-height: 22px;
     }
   }
 }
