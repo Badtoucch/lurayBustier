@@ -22,24 +22,18 @@
     max-width: 565px;
     margin-left: 28px;
     margin-bottom: 102px;
-    padding-top: 66px;
     text-align: left;
     position: relative;
 
     @include r(1023) {
       max-width: none;
       margin-left: 0;
+      margin-bottom: 50px;
       text-align: center;
     }
 
     &::before {
-      width: 50px;
-      height: 42px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      content: "";
-      background: url("../img/icon-crown.png") no-repeat;
+      left: 28px;
 
       @include r(1023) {
         left: 50%;
@@ -47,30 +41,36 @@
       }
     }
   }
+
   .header-box {
     @include r(639) {
       margin-top: 30px;
       order: 1;
     }
   }
+
   &-discount {
     position: absolute;
     top: 10px;
     left: 24px;
+
     @include r(1239) {
       top: 0;
       left: 10px;
     }
+
     @include r(1023) {
       left: auto;
-			right: -30px;
-			top: -30px;
-		}
-		@include r(479) {
-			top: -40px;
-			right: -20px;
+      right: -30px;
+      top: -30px;
+    }
+
+    @include r(479) {
+      top: -40px;
+      right: -20px;
     }
   }
+
   .form {
     width: 660px;
     padding: 25px;
@@ -116,6 +116,7 @@
         right: -35px;
         top: -35px;
       }
+
       @include r(479) {
         top: -41px;
         right: -20px;
@@ -336,9 +337,11 @@
       top: -40px;
       left: -10px;
     }
+
     @include r(639) {
       left: 53px;
     }
+
     @include r(479) {
       left: 50%;
       transform: translateX(-50%);

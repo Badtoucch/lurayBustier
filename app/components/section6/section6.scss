@@ -3,20 +3,8 @@
   padding-bottom: 154px;
 
   .title {
-    padding-top: 74px;
     margin-bottom: 23px;
     position: relative;
-
-    &::before {
-      width: 50px;
-      height: 42px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 0;
-      content: "";
-      background: url("../img/icon-crown.png") no-repeat;
-    }
   }
 
   .content {
@@ -60,7 +48,6 @@
           margin-right: 0;
 
           @include r(767) {
-            // margin-bottom: 20px;
           }
 
           &::before {
@@ -222,6 +209,12 @@
     color: #36352e;
     background-color: #faf0e9;
     position: relative;
+    @include r(767) {
+      margin-bottom: 30px;
+    }
+    @include r(479) {
+      margin-bottom: 22px;
+    }
 
     &::before {
       content: '';
@@ -321,7 +314,6 @@
     line-height: 26px;
 
     @include r(767) {
-      // line-height: 22px;
     }
   }
 }

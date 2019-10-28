@@ -1,7 +1,7 @@
 .section9 {
   padding-bottom: 124px;
   background:
-    url("../img/man-woman-bg.png") no-repeat 50% 100%,
+    url("../img/man-woman-bg.png") no-repeat 49% 100%,
     url("../img/section-bg.jpg") no-repeat 50%;
   background-size: auto, cover;
 
@@ -20,6 +20,14 @@
 
   .title {
     margin-bottom: 83px;
+
+    @include r(1023) {
+      margin-bottom: 40px;
+    }
+
+    @include r(639) {
+      margin-bottom: 30px;
+    }
   }
 
   &__content {
