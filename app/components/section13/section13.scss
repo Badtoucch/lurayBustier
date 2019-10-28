@@ -1,0 +1,64 @@
+.icon-list {
+  padding: 90px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @include r(1239) {
+    padding: 90px 0;
+  }
+
+  @include r(1023) {
+    padding: 70px 0;
+  }
+
+  @include r(767) {
+    padding: 50px 0;
+  }
+
+  @include r(639) {
+    padding: 30px 0;
+  }
+
+  @include r(410) {
+    padding: 0;
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+
+    @include r(767) {
+      max-width: 90px;
+    }
+  }
+}
+
+.icon-list__item:not(:last-child) {
+  @include r(410) {
+    margin-bottom: 10px;
+  }
+}
+
+.icon-list__item:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 110px;
+  background-color: #ead6cd;
+  top: 42%;
+  right: -170px;
+
+  @include r(1239) {
+    right: -144px;
+  }
+
+  @include r(1023) {
+    width: 70px;
+    right: -85px;
+  }
+
+  @include r(767) {
+    display: none;
+  }
+}
