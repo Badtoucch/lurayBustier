@@ -4,8 +4,8 @@ body {
   overflow-x: hidden;
   color: #666;
   background-color: #fff;
-  background: url(../img/1bg.svg) repeat-y center;
-
+  background: url(../img/1bg.svg) center no-repeat;
+  background-size: auto;
   @include r(479) {
     margin-top: 0 !important;
   }
@@ -16,10 +16,6 @@ body {
   overflow-x: hidden;
 }
 
-.page {
-  background-color: #fff;
-}
-
 .section-bg {
   background: url("../img/section-bg.jpg") no-repeat 50%;
   background-size: cover;
@@ -28,7 +24,6 @@ body {
 img {
   max-width: 100%;
 }
-
 svg {
   overflow: hidden;
 }

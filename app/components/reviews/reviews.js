@@ -4,6 +4,8 @@ $(".reviews-content").slick({
   speed: 300,
   slidesToShow: 3,
 	slidesToScroll: 3,
+	autoplay: true,
+  autoplaySpeed: 10000,
 	nextArrow: '.reviews__arrow-right',
   prevArrow: '.reviews__arrow-left',
   responsive: [
@@ -31,3 +33,5 @@ $(".reviews-content").slick({
     }
   ]
 });
+
+
