@@ -1,0 +1,468 @@
+.diagrams
+	padding: 130px 0 170px
+	+r(1239)
+		padding: 60px 0 80px
+	&-content
+		margin-top: 75px
+		display: flex
+		justify-content: space-between
+		+r(1239)
+			margin-top: 40px
+		+r(1023)
+			flex-direction: column
+			margin-top: 25px
+		+r(639)
+			margin-top: 20px
+	&-box
+		&-reviews
+			max-width: 600px
+			+r(1239)
+				max-width: 500px
+				margin-right: 40px
+			+r(1023)
+				max-width: 100%
+				margin-bottom: 25px
+				display: flex
+				justify-content: space-between
+				margin-right: 0
+			+r(639)
+				flex-direction: column
+		&-item
+			width: 490px
+			+r(1023)
+				margin: 0 auto 0
+			+r(639)
+				width: 100%
+	&-review
+		display: flex
+		+r(1023)
+			align-items: center
+			flex-direction: column
+			flex: 1
+			text-align: center
+		+r(639)
+			flex-direction: row
+			text-align: left
+		+r(479)
+			flex-direction: column
+			text-align: center
+		&:not(:last-child)
+			margin-bottom: 50px
+			+r(1239)
+				margin-bottom: 30px
+			+r(1023)
+				margin-bottom: 0px
+				margin-right: 15px
+			+r(639)
+				margin-right: 0
+				margin-bottom: 15px
+		&__img
+			flex-shrink: 0
+			margin-right: 20px
+			+r(1239)
+				max-width: 130px
+				margin-right: 15px
+			+r(1023)
+				max-width: 105px
+				margin-right: 0
+			+r(639)
+				margin-right: 10px
+				max-width: 115px
+			+r(479)
+				margin-right: 0
+				margin-bottom: 10px
+		&__name
+			margin-top: 10px
+			color: #36352e
+			font-size: 22px
+			font-weight: 700
+			line-height: 1
+			+r(1239)
+				font-size: 21px
+				margin-top: 0
+			+r(1023)
+				font-size: 20px
+				margin-top: 10px
+			+r(767)
+				font-size: 19px
+			+r(639)
+				margin-top: 0
+		&__age
+			margin-top: 5px
+			color: #36352e
+			font-size: 17px
+			font-weight: 400
+			line-height: 1
+			+r(1239)
+				font-size: 16px
+			+r(767)
+				font-size: 15px
+		&__text
+			margin-top: 12px
+			color: #666666
+			font-size: 17px
+			font-weight: 400
+			line-height: 22px
+			+r(1239)
+				margin-top: 8px
+				font-size: 16px
+				line-height: normal
+			+r(1023)
+				br
+					display: none
+			+r(767)
+				font-size: 15px
+			+r(639)
+				margin-top: 5px
+		&--ml1
+			margin-left: 17%
+			+r(1239)
+				margin-left: 8%
+			+r(1023)
+				margin-left: 0
+		&--ml2
+			margin-left: 6%
+			+r(1239)
+				margin-left: 4%
+			+r(1023)
+				margin-left: 0
+	&__head
+		color: #222222
+		font-size: 20px
+		font-weight: 400
+		line-height: 1
+		+r(1239)
+			font-size: 19px
+		+r(1023)
+			text-align: center
+			font-size: 18px
+		+r(479)
+			font-size: 17px
+	&-list
+		margin-top: 20px
+		position: relative
+		max-width: 480px
+		background: url(../img/item-bg.png) no-repeat center
+		background-size: contain
+		+r(639)
+			max-width: 430px
+			margin: 20px auto 0
+		+r(479)
+			display: flex
+			flex-wrap: wrap
+			justify-content: center
+		&__item
+			box-shadow: -6px 25px 40px rgba(2, 2, 2, 0.12)
+			background-color: #ffffff
+			border-radius: 50%
+			position: relative
+			display: flex
+			justify-content: center
+			align-items: center
+			&::before
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				border-radius: 50%
+				transform: translate(-50%, -50%)
+				width: 35px
+				height: 35px
+				background-color: #ffffff
+				z-index: 4
+			&::after
+				content: ''
+				position: absolute
+				top: 50%
+				left: 50%
+				border-radius: 50%
+				transform: translate(-50%, -50%)
+				width: 21px
+				height: 21px
+				box-shadow: -1px 6px 5px rgba(2, 2, 2, 0.19)
+				z-index: 5
+	&-for
+		margin-top: 32px
+		display: flex
+		justify-content: space-between
+		+r(479)
+			margin-top: 20px
+		&__item
+			position: relative
+			color: #36352e
+			font-size: 20px
+			font-weight: 600
+			line-height: 1
+			text-align: center
+			&:not(:last-child)
+				margin-right: 10px
+			+r(1239)
+				font-size: 19px
+			+r(1023)
+				font-size: 18px
+			span
+				display: block
+				width: 16px
+				height: 16px
+				border-radius: 50%
+				margin: 0 auto 10px
+				position: relative
+				&::before
+					content: ''
+					position: absolute
+					bottom: -3px
+					left: 50%
+					transform: translateX(-50%)
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 4px 4px 0 4px
+			&--diagram4
+				background-color: #eb4429
+				&::before
+					border-color: #eb4429 transparent transparent transparent
+			&--diagram1
+				background-color: #eca280
+				&::before
+					border-color: #eca280 transparent transparent transparent
+			&--diagram2
+				background-color: #f3aaa2
+				&::before
+					border-color: #f3aaa2 transparent transparent transparent
+			&--diagram3
+				background-color: #d0a8b8
+				&::before
+					border-color: #d0a8b8 transparent transparent transparent
+					
+
+.diagram1
+	width: 226px
+	height: 226px
+	padding: 33px
+	margin-left: 30px
+	z-index: 3
+	+r(1239)
+		width: 220px
+		height: 220px
+		padding: 30px
+	+r(639)
+		width: 200px
+		height: 200px
+		padding: 25px
+	&::after
+		background-color: #f3aaa2
+	&-percent
+		position: absolute
+		font-size: 25px
+		font-weight: 400
+		line-height: 1
+		text-align: center
+		z-index: 10
+		bottom: 57px
+		left: 16px
+		display: inline
+		+r(1239)
+			font-size: 23px
+		+r(639)
+			font-size: 21px
+		+r(479)
+			bottom: 40px
+			left: 12px
+	&-pie
+		stroke: #f3aaa2
+.diagram2
+	width: 192px
+	height: 192px
+	z-index: 2
+	padding: 25px
+	margin-top: -25px
+	+r(1239)
+		width: 185px
+		height: 185px
+		padding: 22px
+	+r(639)
+		width: 160px
+		height: 160px
+		padding: 20px
+	&::after
+		background-color: #eca280
+	&-percent
+		position: absolute
+		font-size: 20px
+		font-weight: 400
+		line-height: 1
+		text-align: center
+		z-index: 10
+		bottom: 59px
+		left: 15px
+		display: inline
+		+r(639)
+			font-size: 17px
+			left: 10px
+			bottom: 50px
+		+r(479)
+			left: 7px
+	&-pie
+		stroke: #f1a583
+.diagram3
+	width: 150px
+	height: 150px
+	padding: 20px
+	z-index: 1
+	margin-left: 115px
+	margin-top: -35px
+	+r(1239)
+		width: 140px
+		height: 140px
+		padding: 17px
+	+r(639)
+		width: 120px
+		height: 120px
+		padding: 15px
+	&::after
+		background-color: #d1a9b9
+	&-percent
+		position: absolute
+		font-size: 15px
+		font-weight: 400
+		line-height: 1
+		text-align: center
+		z-index: 10
+		bottom: 36px
+		left: 11px
+		display: inline
+		+r(639)
+			left: 2px
+			font-size: 14px
+		+r(479)
+			left: 10px
+			bottom: 30px
+	&-pie
+		stroke: #dfb4c5
+.diagram4
+	width: 325px
+	height: 325px
+	padding: 48px
+	z-index: 4
+	position: absolute
+	right: 0
+	top: 95px
+	+r(1239)
+		width: 300px
+		height: 300px
+		padding: 42px
+		top: 100px
+		+r(639)
+			width: 270px
+			height: 270px
+			padding: 37px
+			top: 90px
+	&::before
+		width: 50px
+		height: 50px
+	&::after
+		background-color: #eb4429
+		width: 30px
+		height: 30px
+	&-percent
+		position: absolute
+		font-size: 35px
+		font-weight: 400
+		line-height: 1
+		text-align: center
+		z-index: 10
+		top: 61px
+		right: 27px
+		display: inline
+		+r(639)
+			font-size: 31px
+			top: 50px
+			right: 20px
+		+r(479)
+			right: 10px
+			top: 30px
+	&-pie
+		stroke: #eb4429 
+.diagram1, .diagram2, .diagram3, .diagram4
+	+r(479)
+		width: 145px
+		height: 145px
+		padding: 16px
+		margin: 0 5px 5px
+		position: relative
+		top: 0
+		&::before
+			width: 32px
+			height: 32px
+		&::after
+			width: 20px
+			height: 20px
+		&-percent
+			font-size: 17px
+
+label
+	display: block
+	font-size: 2rem
+	font-weight: 900
+
+#pie, #pie2, #pie3, #pie4
+	fill: currentcolor
+	stroke-width: 50
+	stroke-dasharray: 0 158
+	transition: stroke-dasharray 2s
+
+#readout, #readout2, #readout3, #readout4
+	width: 100%
+	position: relative
+	width: 100%
+	height: 100%
+
+#utilslider, #utilslider2, #utilslider3, #utilslider4
+	width: 20%
+	position: absolute
+	top: 0
+	right: 0
+	opacity: 0
+	display: none
+	
+
+#diagram4
+	transform: rotate(16deg)
+	color: #fff
+	background: currentcolor
+	border-radius: 50%
+	width: 100%
+	position: absolute
+	border: 1px solid #ccc
+	top: 0
+	left: 0
+#diagram1
+	transform: rotate(-66deg)
+	color: #fff
+	background: currentcolor
+	border-radius: 50%
+	width: 100%
+	position: absolute
+	border: 1px solid #ccc
+	top: 0
+	left: 0
+#diagram2
+	transform: rotate(-85deg)
+	color: #fff
+	background: currentcolor
+	border-radius: 50%
+	width: 100%
+	position: absolute
+	border: 1px solid #ccc
+	top: 0
+	left: 0
+#diagram3
+	transform: rotate(-70deg)
+	color: #fff
+	background: currentcolor
+	border-radius: 50%
+	width: 100%
+	position: absolute
+	border: 1px solid #ccc
+	top: 0
+	left: 0
