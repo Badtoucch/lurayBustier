@@ -2,10 +2,13 @@
   min-height: 936px;
   padding-top: 245px;
   background: url("../img/section2-bg.png") no-repeat calc(50% - 813px) 100%;
+  position: relative;
+  overflow-x: hidden;
 
   @include r(1239) {
-    min-height: 835px;
-    padding: 160px 0 0px;
+    min-height: auto;
+    padding: 160px 0 100px;
+    background: none;
   }
 
   @include r(1023) {
@@ -18,13 +21,41 @@
     padding: 30px 0;
   }
 
+  &::before {
+    @include r(1239) {
+      content: "";
+      position: absolute;
+      left: calc(50% - 723px);
+      height: 100%;
+      width: 500px;
+      bottom: 0;
+      opacity: .5;
+      background: url("../img/section2-bg.png") no-repeat 100% 0;
+    }
+
+    @include r(1023) {
+      display: none;
+    }
+  }
+
+  .container {
+    @include r(1239) {
+      padding-left: 290px;
+    }
+
+    @include r(1023) {
+      padding: 0 10px;
+    }
+  }
+
   .title {
     margin-left: 586px;
     text-align: left;
     letter-spacing: -1.1px;
 
     @include r(1239) {
-      margin-left: 480px;
+      margin-left: 0;
+      // text-align: center;
     }
 
     @include r(1023) {
@@ -44,7 +75,9 @@
   position: relative;
 
   @include r(1239) {
-    padding-left: 518px;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 0;
   }
 
   @include r(1023) {
@@ -62,12 +95,15 @@
     align-items: center;
 
     @include r(1239) {
-      width: 215px;
+      width: 330px;
+      margin-left: 20px;
+      flex-direction: row;
     }
 
     @include r(1023) {
-      width: 350px;
+      width: 360px;
       margin-bottom: 25px;
+      margin-left: 0;
     }
 
     &:first-child,
@@ -79,19 +115,28 @@
       flex-direction: row;
 
       @include r(1239) {
-        left: 45px;
+        width: 330px;
+        margin-bottom: 20px;
+        flex-direction: row;
+        // left: 155px;
+        position: static;
       }
 
       @include r(1023) {
-        width: 350px;
+        width: 360px;
         position: static;
-        flex-direction: column;
+        flex-direction: row;
       }
 
       .section2-list__img {
         margin-left: 26px;
         flex-shrink: 0;
         order: 1;
+
+        @include r(1239) {
+          margin-left: 0;
+          order: 0;
+        }
 
         @include r(1023) {
           margin-left: 0;
@@ -103,21 +148,46 @@
         margin-top: 0;
         text-align: right;
 
+        @include r(1239) {
+          margin-top: 15px;
+          text-align: left;
+        }
+
         @include r(1023) {
           margin-top: 15px;
-          text-align: center;
+          text-align: left;
         }
       }
     }
 
     &:last-child .section2-list__description {
       width: 150px;
+
+      @include r(1239) {
+        width: auto;
+        margin-left: 10px;
+      }
+    }
+
+    &:first-child {
+      @include r(1239) {
+        width: 330px;
+        margin-left: 0;
+      }
+
+      @include r(1023) {
+        width: 360px;
+      }
     }
   }
 
   &__img {
     max-width: 100%;
     display: block;
+
+    @include r(1239) {
+      max-width: 120px;
+    }
   }
 
   &__description {
@@ -126,9 +196,13 @@
     text-align: center;
     line-height: 26px;
 
-    @include r(1023) {
-      margin-top: 15px;
+    @include r(1239) {
+      margin-top: 0;
+      margin-left: 10px;
+      text-align: left;
     }
+
+    @include r(1023) {}
   }
 }
 
@@ -137,12 +211,20 @@
   left: 213px;
 
   @include r(1239) {
-    left: 93px;
+    // margin-left: 0;
+    // position: static;
+    top: 85px;
+    left: 193px;
   }
 }
 
 .section2-list__item:nth-child(3) {
   margin-bottom: 0;
+
+  @include r(1239) {
+    margin-left: 0;
+  }
+
   @include r(767) {
     margin-bottom: 25px;
   }
@@ -151,11 +233,13 @@
 .section2-list__item:last-child {
   width: 223px;
   margin-left: 20px;
+
   @include r(1239) {
-    width: 200px;
+    width: 330px;
   }
+
   @include r(1023) {
-    width: 350px;
+    width: 360px;
     margin-left: 0;
     margin-bottom: 0;
   }
