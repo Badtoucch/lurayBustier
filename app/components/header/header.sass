@@ -174,8 +174,8 @@
 				position: absolute
 				top: 50%
 				left: 50%
-				margin-left: -137px
-				width: 96%
+				margin-left: -134px
+				width: 93%
 				height: 92%
 				border: 4px solid #649f36
 				background-color: #ffffff
@@ -184,6 +184,16 @@
 				transform: perspective(400px) rotateX(-6deg) translateY(-45%)
 				border-radius: 10px
 				z-index: -1
+	&-discount
+		position: absolute
+		top: -41px
+		right: -36px
+		+r(1239)
+			top: -32px
+			right: -23px
+		+r(479)
+			top: -39px
+			right: -18px
 
 .logo
 	padding-left: 62px
@@ -231,32 +241,6 @@
 	+r(1239)
 			padding: 25px 25px 12px
 			width: 280px
-	&::before
-		content: '-50%'
-		position: absolute
-		top: -40px
-		right: -40px
-		width: 82px
-		height: 82px
-		background: url(../img/icon-discount.png) no-repeat center
-		background-size: contain
-		display: flex
-		justify-content: center
-		align-items: center
-		color: #ffffff
-		font-size: 21px
-		font-weight: 900
-		line-height: 1
-		transform: rotate(-20deg)
-		+r(1239)
-			right: -20px
-			top: -55px
-		+r(1023)
-			font-size: 19px
-			width: 70px
-			height: 70px
-			right: -35px
-			top: -35px
 	&__title
 		color: #000000
 		font-size: 24px
@@ -318,6 +302,9 @@
 	&-icon
 		display: block
 		margin: 19px auto 0
+	&-btn
+		width: 222px
+
 
 
 
@@ -389,3 +376,23 @@
 				letter-spacing: normal
 			.x_price_current
 				line-height: 1
+
+.discount
+	width: 82px
+	height: 82px
+	background: url(../img/icon-discount.png) no-repeat center
+	background-size: contain
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #ffffff
+	font-size: 21px
+	font-weight: 900
+	line-height: 1
+	+r(1239)
+		width: 70px
+		height: 70px
+		background-size: contain
+		font-size: 19px
+	&__text
+		transform: rotate(-20deg)

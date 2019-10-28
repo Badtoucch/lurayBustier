@@ -1,0 +1,134 @@
+.model
+	padding: 230px 0 100px
+	position: relative
+	+r(1239)
+		padding: 170px 0 70px
+	&::before
+		content: ''
+		position: absolute
+		bottom: 0
+		left: 50%
+		transform: translateX(-140%)
+		background: url(../img/model-girl.png) no-repeat center
+		width: 452px
+		height: 686px
+		background-size: contain
+		+r(1239)
+			transform: translateX(-131%)
+			width: 363px
+			height: 552px
+		+r(1023)
+			transform: translateX(-139%)
+			width: 270px
+			height: 411px
+		+r(767)
+			transform: translateX(-151%)
+			width: 204px
+			height: 311px
+		+r(639)
+			display: none
+	.title
+		br
+			+r(767)
+				display: none
+	&-content
+		margin-top: 55px
+		max-width: 705px
+		display: block
+		margin-left: auto
+		+r(1239)
+			margin-top: 30px
+			max-width: 570px
+		+r(1023)
+			margin-top: 25px
+			max-width: 450px
+		+r(767)
+			max-width: 400px
+			margin-top: 15px
+		+r(639)
+			max-width: 100%
+			margin-top: 20px
+		&__name
+			width: auto
+			display: inline-block
+			color: #37352f
+			font-size: 26px
+			font-weight: 700
+			line-height: 29px
+			letter-spacing: -1.3px
+			border-bottom: 4px solid#ffbab2
+			+r(1239)
+				font-size: 24px
+				line-height: 26px
+			+r(1023)
+				font-size: 22px
+				line-height: 1
+				border-bottom: 3px solid#ffbab2
+			+r(767)
+				font-size: 20px
+			+r(639)
+				padding-bottom: 3px
+				display: block
+				font-size: 19px
+				text-align: center
+				border-bottom: 0
+		&__subtitle
+			margin-top: 21px
+			color: #37352f
+			font-size: 18px
+			font-style: italic
+			line-height: 1
+			letter-spacing: -0.9px
+			+r(1239)
+				margin-top: 17px
+			+r(1023)
+				font-size: 16px
+				letter-spacing: normal
+				margin-top: 10px
+			+r(767)
+				font-size: 15px
+				margin-top: 5px
+			+r(639)
+				text-align: center
+		&-box
+			margin-top: 40px
+			overflow: hidden
+			height: 460px
+			+r(1239)
+				height: 400px
+			+r(1023)
+				margin-top: 20px
+				height: 313px
+				margin-top: 15px
+			+r(767)
+				height: 230px
+			+r(639)
+				margin-top: 10px
+		&__text
+			font-size: 18px
+			font-weight: 400
+			line-height: 26px
+			br
+				+r(1239)
+					display: none
+			+r(1239)
+				line-height: 24px
+			+r(1023)
+				font-size: 16px
+				line-height: normal
+			+r(767)
+				font-size: 15px
+			&:not(:last-child)
+				margin-bottom: 30px
+				+r(1239)
+					margin-bottom: 20px
+				+r(1023)
+					margin-bottom: 10px
+				+r(767)
+					margin-bottom: 5px
+			b
+				font-weight: 600
+			
+				
+
+@import scroll

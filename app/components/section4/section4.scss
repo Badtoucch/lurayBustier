@@ -32,7 +32,6 @@
       text-align: center;
     }
 
-
     &::before {
       width: 50px;
       height: 42px;
@@ -52,6 +51,24 @@
     @include r(639) {
       margin-top: 30px;
       order: 1;
+    }
+  }
+  &-discount {
+    position: absolute;
+    top: 10px;
+    left: 24px;
+    @include r(1239) {
+      top: 0;
+      left: 10px;
+    }
+    @include r(1023) {
+      left: auto;
+			right: -30px;
+			top: -30px;
+		}
+		@include r(479) {
+			top: -40px;
+			right: -20px;
     }
   }
   .form {
