@@ -5,16 +5,24 @@ body {
   color: #666;
   background-color: #fff;
   background: url(../img/1bg.svg) repeat-y center;
+
   @include r(479) {
     margin-top: 0 !important;
   }
 }
+
 html,
 body {
   overflow-x: hidden;
 }
+
 .page {
   background-color: #fff;
+}
+
+.section-bg {
+  background: url("../img/section-bg.jpg") no-repeat 50%;
+  background-size: cover;
 }
 
 img {
@@ -64,6 +72,7 @@ svg {
   color: #37352f;
   text-align: center;
   letter-spacing: -2.4px;
+
   @include r(1239) {
     font-size: 42px;
     line-height: 1.1;
@@ -99,6 +108,7 @@ b {
 .nowrap {
   white-space: nowrap;
 }
+
 select:-moz-focusring,
 a:-moz-focusring {
   color: transparent;
@@ -128,6 +138,7 @@ a:hover {
 .product--color {
   color: #f1a583;
 }
+
 .btn {
   width: 100%;
   height: 65px;
@@ -135,32 +146,30 @@ a:hover {
   line-height: 1;
   border-radius: 5px;
   background-color: #b3be5f;
-  background-image: linear-gradient(
-    to right,
-    #f03112 0%,
-    #f76651 51%,
-    #f03112 100%
-  );
+  background-image: linear-gradient(to right,
+      #f03112 0%,
+      #f76651 51%,
+      #f03112 100%);
   cursor: pointer;
   box-shadow: 0px 5px 0px 0px #d8351a;
   color: #ffffff;
   font-size: 27px;
   font-weight: 900;
   transition: 0.2s;
+
   &__text {
     font-size: 20px;
     line-height: 1;
     display: block;
     font-weight: 400;
   }
+
   &:hover {
     background-color: #b3be5f;
-    background-image: linear-gradient(
-      to right,
-      #ff0000 0%,
-      #f3604b 51%,
-      #ff0000 100%
-    );
+    background-image: linear-gradient(to right,
+        #ff0000 0%,
+        #f3604b 51%,
+        #ff0000 100%);
     box-shadow: 0px 5px 0px 0px #cb3219;
   }
 }
