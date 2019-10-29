@@ -1,0 +1,53 @@
+.topbar
+	position: fixed
+	z-index: 50
+	top: 0
+	left: 0
+	right: 0
+	padding: 15px 0
+	background-color: #649f36
+	+r(1023)
+		padding: 10px 0
+	.container
+		display: flex
+		justify-content: space-between
+		+r(639)
+			flex-direction: column
+	&__text
+		color: #ffffff
+		font-size: 15px
+		font-weight: 600
+		line-height: normal
+		+r(1023)
+			max-width: 300px
+		+r(639)
+			max-width: 100%
+			text-align: center
+	&--country
+		position: relative
+		padding-left: 38px
+		+r(639)
+			margin-top: 4px
+			max-width: 400px
+			padding-left: 0px
+			display: block
+			margin-left: auto
+			margin-right: auto
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 28px
+			height: 28px
+			background: url(../img/flag-thai.png) no-repeat center
+			+r(639)
+				width: 16px
+				height: 16px
+				background-size: contain
+				position: relative
+				top: 2px
+				display: inline-block
+				transform: none
+				margin-right: 5px
