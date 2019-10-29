@@ -1,0 +1,77 @@
+.ever-popup__inner
+	max-width: 100% !important
+
+.pop-up
+	padding-left: 10px
+	padding-right: 10px
+
+.pop-up__box
+	background: url(../img/bg-header.jpg) no-repeat center
+	border: 1px solid rgba(100, 100, 100, 0.7)
+	box-sizing: border-box
+	border-radius: 10px
+	padding: 0px 80px 0px 45px
+	width: 766px
+	max-width: 100%
+	
+
+.popup-title
+	text-align: center
+	font-size: 40px
+
+	h3, h2
+		margin: 0
+
+.pop-up__content
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+.image-pack img
+	display: inline-block
+	max-width: 100%
+
+.pop-up__left
+	flex: 1
+	text-align: center
+	min-width: 250px
+	padding-top: 70px
+	padding-bottom: 50px
+.form-box1 > *
+	float: none !important
+	margin: 0 !important
+.ever-popup__close:after, .ever-popup__close:before
+	right: -48px !important
+	top: 15px !important
+	width: 44px !important
+	height: 4px !important
+.ever-popup__inner
+	padding-top: 10px !important
+@media (max-width: 999px)
+	.pop-up__box
+		width: 460px
+	.pop-up__content
+		justify-content: center
+	.image-pack
+		padding-bottom: 20px
+		img
+			max-height: 280px
+	.ever-popup__close:after, .ever-popup__close:before
+		right: -48px !important
+		top: 0px !important
+		width: 28px !important
+		height: 3px !important
+@media (max-width: 385px)
+	.ever-popup__close:after, .ever-popup__close:before
+		right: 0 !important
+	.ever-popup__close
+		right: auto !important
+		left: -16px !important
+		top: -27px !important
+
+.ever-popup__inner
+	position: absolute !important
+	top: 50% !important
+	margin: 0 !important
+	left: 50% !important
+	transform: translate(-50%, -50%) !important

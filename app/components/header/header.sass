@@ -396,3 +396,38 @@
 		font-size: 19px
 	&__text
 		transform: rotate(-20deg)
+
+
+.form-input
+	position: relative
+	margin-top: 15px
+	&::before
+		content: ''
+		position: absolute
+		left: 20px
+		top: 50%
+		transform: translateY(-50%)
+	&--user
+		&::before
+			width: 19px
+			height: 23px
+			background: url(../img/icon-user.svg) no-repeat center
+	&--phone
+		&::before
+			width: 21px
+			height: 24px
+			background: url(../img/icon-phone.svg) no-repeat center
+	input
+		border-radius: 5px
+		border: 1px solid #dedddd
+		background-color: #ffffff
+		width: 222px
+		height: 58px
+		color: #444444
+		font-size: 15px
+		font-weight: 400
+		padding-left: 52px
+		&:hover, &:focus
+			box-shadow: 0 0 4px 0 #ccc
+.form-btn-last
+	margin-top: 20px

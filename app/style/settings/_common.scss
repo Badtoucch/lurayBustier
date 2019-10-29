@@ -4,7 +4,7 @@ body {
   overflow-x: hidden;
   color: #666;
   background-color: #fff;
-  background: url(../img/1bg.svg) center no-repeat;
+  background: url(../img/1bg.svg) center repeat-y;
   background-size: auto;
   @include r(479) {
     margin-top: 0 !important;
@@ -141,10 +141,12 @@ a:hover {
   line-height: 1;
   border-radius: 5px;
   background-color: #b3be5f;
-  background-image: linear-gradient(to right,
-      #f03112 0%,
-      #f76651 51%,
-      #f03112 100%);
+  background-image: linear-gradient(
+    to right,
+    #f03112 0%,
+    #f76651 51%,
+    #f03112 100%
+  );
   cursor: pointer;
   box-shadow: 0px 5px 0px 0px #d8351a;
   color: #ffffff;
@@ -161,10 +163,12 @@ a:hover {
 
   &:hover {
     background-color: #b3be5f;
-    background-image: linear-gradient(to right,
-        #ff0000 0%,
-        #f3604b 51%,
-        #ff0000 100%);
+    background-image: linear-gradient(
+      to right,
+      #ff0000 0%,
+      #f3604b 51%,
+      #ff0000 100%
+    );
     box-shadow: 0px 5px 0px 0px #cb3219;
   }
 }
