@@ -130,7 +130,7 @@
   .header-box__pack {
     position: absolute;
     top: -46px;
-    bottom: unset;
+    bottom: auto;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
