@@ -1,0 +1,72 @@
+<div class="ever-popup-build">
+  <div class="pop-up" id="cloneThis">
+    <div class="pop-up__box">
+      <div class="popup-title">
+        <h3></h3>
+      </div>
+      <div class="pop-up__content">
+        <div class="pop-up__left">
+          <div class="image-pack pack">
+            <img src="./img/pack.png" alt="pack" />
+          </div>
+        </div>
+        <div class="pop-up__right">
+          <div class="form-box">
+            <div class="header-form form header-form__main">
+              <div class="discount header-discount">
+                <span class="discount__text">-50%</span>
+              </div>
+              <h3 class="form__title">
+                Закажите сейчас <br /><span class="form__title--color"
+                  >по Акции</span
+                >
+              </h3>
+              <div class="price">
+                <div class="price-old">
+                  <h5 class="price-old__title">Старая цена</h5>
+                  <p class="price-old__count">
+                    <span class="x_price_previous">1980</span
+                    ><span class="x_currency price-current">руб</span>
+                  </p>
+                </div>
+                <div class="price-new">
+                  <h5 class="price-new__title">Ваша цена</h5>
+                  <p class="price-new__count">
+                    <span class="x_price_current">990</span
+                    ><span class="x_currency price-current">руб</span>
+                  </p>
+                </div>
+              </div>
+              <form method="POST" action="/submit" class="x_order_form">
+                <label class="form-input form-input--user">
+                  <input
+                    type="text"
+                    name="name"
+                    required=""
+                    placeholder="Ваше имя"
+                    autocomplete="name"
+                  />
+                </label>
+                <label class="form-input form-input--phone">
+                  <input
+                    type="tel"
+                    name="phone"
+                    required=""
+                    placeholder="Ваш телефон"
+                    autocomplete="tel"
+                  />
+                </label>
+                <button type="submit" class="btn form-btn form-btn-last">
+                  Заказать <span class="btn__text">по акции</span>
+                </button>
+              </form>
+              <div class="form-icon">
+                <img src="img/icon-form.png" alt="gmp" class="form-icon" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
