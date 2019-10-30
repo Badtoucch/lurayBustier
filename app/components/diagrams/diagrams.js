@@ -1,9 +1,25 @@
-$(window).scroll(function() {
-  const hT = $(".diagrams-list").offset().top,
-    hH = $(".diagrams-list").outerHeight(),
-    wH = $(window).height(),
-    wS = $(this).scrollTop();
-  if (wS > hT + hH - wH && hT > wS && wS + wH > hT + hH) {
+const element = document.querySelector(".diagrams-list");
+
+const Visible = function(target) {
+  const targetPosition = {
+      top: window.pageYOffset + target.getBoundingClientRect().top,
+      left: window.pageXOffset + target.getBoundingClientRect().left,
+      right: window.pageXOffset + target.getBoundingClientRect().right,
+      bottom: window.pageYOffset + target.getBoundingClientRect().bottom
+    },
+    windowPosition = {
+      top: window.pageYOffset,
+      left: window.pageXOffset,
+      right: window.pageXOffset + document.documentElement.clientWidth,
+      bottom: window.pageYOffset + document.documentElement.clientHeight
+    };
+
+  if (
+    targetPosition.bottom > windowPosition.top && //
+    targetPosition.top < windowPosition.bottom &&
+    targetPosition.right > windowPosition.left &&
+    targetPosition.left < windowPosition.right
+  ) {
     function pieSlicer() {
       const percentValue = (utilslider.value / 100) * circumference;
       pie.style.strokeDasharray = percentValue + " " + circumference;
@@ -68,4 +84,10 @@ $(window).scroll(function() {
     });
     pieSlicer4();
   }
+};
+
+window.addEventListener("scroll", function() {
+  Visible(element);
 });
+
+Visible(element);
