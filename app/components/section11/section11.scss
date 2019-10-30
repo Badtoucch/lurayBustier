@@ -35,6 +35,7 @@
       position: relative;
       display: flex;
       justify-content: center;
+      align-items: flex-start;
     }
 
     @include r(639) {
@@ -49,9 +50,12 @@
     transform: translate(-50%, -50%);
 
     @include r(1023) {
-      max-width: 270px;
+      max-width: 263px;
       position: static;
       transform: translate(0);
+    }
+    @include r(767) {
+      max-width: 253px;
     }
 
     @include r(639) {
@@ -116,6 +120,7 @@
 
     @include r(1023) {
       margin-left: 70px;
+      padding: 25px;
       position: static;
       transform: translate(0);
     }
@@ -150,25 +155,27 @@
     height: 100%;
 
     @include r(1023) {
-      height: 86%;
-      top: 48%;
+      height: 98%;
+      top: auto;
+      bottom: -10px;
       margin-left: -137px;
+      transform: perspective(400px) rotateX(-6deg) translateY(0);
     }
 
     @include r(767) {
-      height: 90%;
-      top: 45%;
+      height: 100%;
+      // top: 45%;
     }
 
     @include r(639) {
       height: 99%;
-      top: 51%;
+      // top: 51%;
     }
   }
 }
 
 .section11.block {
   @include r(639) {
-    padding-bottom: 60px;
+    // padding-bottom: 60px;
   }
 }

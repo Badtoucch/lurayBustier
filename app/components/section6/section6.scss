@@ -2,6 +2,11 @@
   padding-top: 118px;
   padding-bottom: 154px;
 
+  @include r(1239) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .title {
     margin-bottom: 23px;
     position: relative;
@@ -47,8 +52,7 @@
           margin-left: auto;
           margin-right: 0;
 
-          @include r(767) {
-          }
+          @include r(767) {}
 
           &::before {
             left: 45px;
@@ -159,6 +163,7 @@
 
   .pack::before {
     z-index: 2;
+    bottom: 25px;
 
     @include r(1239) {
       bottom: 12px;
@@ -209,9 +214,11 @@
     color: #36352e;
     background-color: #faf0e9;
     position: relative;
+
     @include r(767) {
       margin-bottom: 30px;
     }
+
     @include r(479) {
       margin-bottom: 22px;
     }
@@ -313,8 +320,7 @@
     font-size: 18px;
     line-height: 26px;
 
-    @include r(767) {
-    }
+    @include r(767) {}
   }
 }
 

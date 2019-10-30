@@ -83,6 +83,7 @@
 
   &__img {
     margin-right: 36px;
+    flex-shrink: 0;
 
     @include r(1239) {
       max-width: 120px;

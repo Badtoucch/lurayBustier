@@ -136,7 +136,8 @@
       border: 4px solid #649f36;
       border-radius: 10px;
       z-index: -1;
-			background-color: #fff;
+      background-color: #fff;
+
       @include r(1239) {
         width: 511px;
         height: 190px;
@@ -247,6 +248,11 @@
     }
   }
 
+  .x_price_current,
+  .x_price_previous {
+    margin-right: 2px;
+  }
+
   .btn.ever-popup-btn {
     width: 40%;
     margin-left: 35px;
@@ -301,7 +307,7 @@
   width: 216px;
   position: absolute;
   right: calc(50% - 354px);
-  bottom: -80px;
+  bottom: -93px;
 
   img {
     display: block;
@@ -325,7 +331,9 @@
   }
 
   @include r(639) {
-    width: 100%;
+    // width: 100%;
+    max-width: 230px;
+    margin: 0 auto;
     position: static;
 
     img {
@@ -353,7 +361,7 @@
     }
 
     @include r(639) {
-      left: 53px;
+      left: 83px;
     }
 
     @include r(479) {

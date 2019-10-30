@@ -45,6 +45,14 @@
 
   .section3-list__img {
     margin-bottom: 25px;
+
+    @include r(1023) {
+      max-height: none;
+    }
+
+    @include r(639) {
+      margin-bottom: 15px;
+    }
   }
 
   .section3-list__item:nth-child(2) .section3-list__img {
@@ -77,6 +85,10 @@
         width: 90px;
         top: 129px;
         left: 14px;
+      }
+
+      @include r(639) {
+        top: 119px;
       }
     }
   }
