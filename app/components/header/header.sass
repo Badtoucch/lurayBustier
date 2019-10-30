@@ -1,5 +1,5 @@
 .header
-	padding: 50px 0 70px
+	padding: 44px 0 76px
 	background: url(../img/header-gitl.png) no-repeat 55% 50%, url(../img/bg-header.jpg) center no-repeat
 	background-size: contain, cover
 	+r(1239)
@@ -13,7 +13,7 @@
 	+r(767)
 		padding: 30px 0
 	&-content
-		margin-top: 35px
+		margin-top: 40px
 		display: flex
 		justify-content: space-between
 		+r(1239)
@@ -54,7 +54,7 @@
 		+r(479)
 			font-size: 26px
 	&-subtitle
-		margin-top: 36px
+		margin-top: 39px
 		color: #e57e5d
 		font-size: 32px
 		font-style: italic
@@ -118,7 +118,7 @@
 			b
 				display: block
 			&:not(:last-child)
-				margin-bottom: 25px
+				margin-bottom: 31px
 				+r(639)
 					margin-bottom: 10px
 			&::before
@@ -157,8 +157,8 @@
 					background: url(../img/icon-head3.png) no-repeat 54% 50% #ffffff
 	&-box__pack
 		position: relative
-		bottom: -230px
-		left: -40px
+		bottom: -245px
+		left: -32px
 		+r(1239)
 			max-width: 279px
 			left: -25px
@@ -168,15 +168,27 @@
 			bottom: 0
 		+r(639)
 			max-width: 230px
+	&-form
+		margin-top: 18px
+		width: 280px
+		position: relative
+		margin-right: -6px
+		+r(1239)
+			margin-right: 0
+			margin-bottom: 5px
+		+r(1023)
+			margin-top: 0
+		+r(639)
+			margin-top: 20px
 	&-form__main
 			&::after
 				content: ''
 				position: absolute
 				top: 50%
 				left: 50%
-				margin-left: -134px
+				margin-left: -133px
 				width: 93%
-				height: 92%
+				height: 91.5%
 				border: 4px solid #649f36
 				background-color: #ffffff
 				transition: transform 2s
@@ -184,13 +196,21 @@
 				transform: perspective(400px) rotateX(-6deg) translateY(-45%)
 				border-radius: 10px
 				z-index: -1
+				+r(1239)
+					margin-left: -138px
 	&-discount
 		position: absolute
-		top: -41px
-		right: -36px
+		top: -45px
+		right: -37px
+		+r(1280)
+			right: -20px
+			top: -50px
 		+r(1239)
 			top: -32px
 			right: -23px
+		+r(1048)
+			top: -38px
+			right: -18px
 		+r(479)
 			top: -39px
 			right: -18px
@@ -279,9 +299,7 @@
 			background-color: #649f36
 			border-radius: 50%
 			text-align: center
-			display: flex
-			justify-content: center
-			align-items: center
+			padding: 9px 0 8px
 			color: #ffffff
 			font-size: 30px
 			font-weight: 700
@@ -294,7 +312,7 @@
 			text-align: center
 			margin-bottom: 9px
 		&__sup
-			margin: 0 9px
+			margin: 0 7px
 			color: #000000
 			font-family: Arial, Helvetica, sans-serif
 			font-size: 28px
@@ -318,10 +336,13 @@
 .price
 	display: flex
 	justify-content: space-between
+	position: relative
 	&::after
-		margin-top: 4px
 		content: ''
-		display: block
+		position: absolute
+		top: 4px
+		left: 50%
+		transform: translateX(-50%)
 		width: 1px
 		height: 50px
 		background-color: #d1d0d0
@@ -332,6 +353,7 @@
 		justify-content: space-between
 		padding-bottom: 4px
 		order: 1
+		margin-right: auto
 		&__title
 			color: #666666
 			font-size: 13px
@@ -343,6 +365,7 @@
 			line-height: 1
 			.x_currency
 				font-size: 16px
+				margin-left: 2px
 			.x_price_previous
 				position: relative
 				&:before, &:after
@@ -374,6 +397,7 @@
 				font-size: 18px
 				font-weight: 400
 				letter-spacing: normal
+				margin-left: 2px
 			.x_price_current
 				line-height: 1
 
@@ -389,6 +413,7 @@
 	font-size: 21px
 	font-weight: 900
 	line-height: 1
+	letter-spacing: 1.0px
 	+r(1239)
 		width: 70px
 		height: 70px
@@ -431,3 +456,5 @@
 			box-shadow: 0 0 4px 0 #ccc
 .form-btn-last
 	margin-top: 20px
+
+
