@@ -186,7 +186,7 @@ a:hover {
   font-weight: 400;
 }
 
-::-ms-input-placeholder {
+:-ms-input-placeholder {
   color: #666 !important;
   font-family: "Open Sans" !important;
   font-size: 15px !important;
@@ -194,7 +194,7 @@ a:hover {
 }
 
 ::placeholder {
-  color: #444444;
+  color: #666;
   font-family: "Open Sans";
   font-size: 15px;
   font-weight: 400;

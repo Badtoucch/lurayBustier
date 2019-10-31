@@ -41,7 +41,7 @@
 	margin: 0 !important
 .ever-popup__close:after, .ever-popup__close:before
 	right: -48px !important
-	top: 15px !important
+	top: -15px !important
 	width: 44px !important
 	height: 4px !important
 .ever-popup__inner
@@ -74,3 +74,7 @@
 	margin: 0 !important
 	left: 50% !important
 	transform: translate(-50%, -50%) !important
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.ever-popup.show
+		overflow: hidden
