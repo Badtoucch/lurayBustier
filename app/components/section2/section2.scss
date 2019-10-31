@@ -62,6 +62,7 @@
       margin: 0 auto 40px;
       text-align: center;
     }
+
     @include r(639) {
       margin-bottom: 30px;
     }
@@ -231,6 +232,10 @@
   @include r(767) {
     margin-bottom: 25px;
   }
+}
+
+.section2-list__item:nth-child(3) .section2-list__description {
+  max-width: 220px;
 }
 
 .section2-list__item:last-child {
